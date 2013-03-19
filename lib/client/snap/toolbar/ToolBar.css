@@ -1,0 +1,9 @@
+
+.tbar {position:relative; overflow:auto}
+
+.tbar .btn {float:right}
+.tbar .tbtn {float:right; border-style:solid}
+
+.tbar .tbtn:hover {border-style:outset}
+.tbar .tbtn.down {border-style:inset}
+

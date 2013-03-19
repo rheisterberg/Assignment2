@@ -1,0 +1,113 @@
+
+/* See Sprites.css for background image */
+
+.lnav {
+	position:relative; width:210px;
+	margin-bottom:20px;
+}
+
+.lnav .cat {
+	top:5px; left:-8px;
+	margin-right:-10px;
+}
+
+.lnav .cat .cat-b {
+    margin: 0 0 10px 5px;
+}
+
+/* rtm overrides */
+/* RECENTLY VIEWED ITEMS */
+#rtm_html_688 {
+	margin:0px 0px 20px 0px!important;
+}
+
+.flxrtm .itemshl {
+	font: 13px Helvetica, arial, sans-serif;
+	overflow: hidden;
+	padding-bottom: 5px;
+	border:0 !important;
+	color: #333;
+	font-weight: bold;
+}
+
+.flxrtm .align .irow {
+	margin:0 !important;
+}
+
+.flxrtm .imars {
+	padding:0 !important;
+}
+
+/* ADS */
+
+#rtm_html_185 {
+	margin:0px 0px 20px 0px !important;
+}
+
+#rtm_html_964 {
+	margin:0px 0px 20px 0px !important;
+}
+
+#rtm_html_569 {
+	margin:0px 0px 20px 0px !important;
+}
+
+#rtm_html_701 {
+	margin:0px 0px 20px 0px !important;
+}
+
+/* MATCHING EBAY STORES, POPULAR PRODUCTS */
+div.sbx-c {
+	color: #333; font-family: Arial,Helvetica,sans-serif; font-size: 12px;
+	padding:0px !important; margin-bottom:20px;
+}
+
+div.sbx-c a, div.rct_cnb a { color: #333; text-decoration:none }
+div.sbx-c a:hover, div.rct_cnb a:hover { color: #1958bd }
+
+div.sbx-c h2.sbx-h, div.rct h2.rct_hm{
+color: #333;
+font-size: 13px;
+font-weight: bold;
+font-family: Helvetica,Arial;
+padding:5px 0px !important;
+border-bottom: solid 1px #ccc;
+}
+
+div.sbx-b {
+clear: both;
+overflow: auto;
+}
+
+div.sbx-b ul.ts-u {
+	padding:0px !important;
+}
+
+div.sbx-b li {
+	padding:4px 0px !important;
+}
+
+div.sbx-c .sbx-f {
+clear: both;
+border-top: solid 1px #CCC;
+}
+
+.flxrtm .itm-wm a, .flxrtm .itemstitle a {
+	color: #333;	
+}
+
+.flxrtm h2.itemshl {
+	font: bold 13px Helvetica, Arial, sans-serif;
+}
+
+.rct_hm {
+	background:none;
+}
+
+.rct_fm {
+	text-align:left;
+}
+
+.rct_cnb{
+	border:0;
+}

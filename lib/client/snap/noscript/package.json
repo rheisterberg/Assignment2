@@ -1,0 +1,17 @@
+{
+
+	"type": "module",
+	"name":"snap.noscript",
+	"version":"1.0",
+	"description":"Dust Upgrade",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"NoScript.css"}
+
+	]
+
+}

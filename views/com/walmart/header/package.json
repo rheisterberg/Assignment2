@@ -1,0 +1,12 @@
+{
+
+    "name" : "com.walmart.header",
+    "main" : "./header.js",
+
+    "template" : "./header.dust",
+
+    "models" : {
+        "head" : { "url" : "http://localhost:8080/pages/index/json/head.json", "delay":50 }
+    }
+
+}

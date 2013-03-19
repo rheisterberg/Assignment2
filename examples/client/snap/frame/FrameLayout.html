@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frame Layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+<style type="text/css">
+form .btn {margin:10px}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var Panel = snap.require('snap.panel.Panel');
+	var Container = snap.require('snap.Container');
+
+	var Button = snap.require('snap.button.Button');
+
+	var styles = {elem:{padding:'10px','text-align':'center'}};
+
+	var config= {
+		styles:{elem:{width:'600px',height:'600px',border:'1px solid #ccc',margin:'20px'}},
+		manager:'snap.frame.FrameLayout',
+		children:[
+				new Panel({cid:'Frame1',styles:styles,content:'&lt;Frame 1 content &gt;'}),
+				new Panel({cid:'Frame2',styles:styles,content:'&lt;Frame 2 content &gt;'}),
+				new Panel({cid:'Frame3',styles:styles,content:'&lt;Frame 3 content &gt;',selected:'true'}),
+				new Panel({cid:'Frame4',styles:styles,content:'&lt;Frame 4 content &gt;'})
+		],
+		target:document.body
+	};
+
+	var frame = new Container(config);
+
+	var button1 = new Button({type:'button',classes:{elem:'sml blue'},value:'click',text:'Frame 1',target:'form'});
+	button1.subscribe('click',frame.publish.bind(frame,'Frame.view','Frame1'));
+
+	var button2 = new Button({type:'button',classes:{elem:'sml blue'},value:'click',text:'Frame 2',target:'form'});
+	button2.subscribe('click',frame.publish.bind(frame,'Frame.view','Frame2'));
+
+	var button3 = new Button({type:'button',classes:{elem:'sml blue'},value:'click',text:'Frame 3',target:'form'});
+	button3.subscribe('click',frame.publish.bind(frame,'Frame.view','Frame3'));
+
+	var button4 = new Button({type:'button',classes:{elem:'sml blue'},value:'click',text:'Frame 4',target:'form'});
+	button4.subscribe('click',frame.publish.bind(frame,'Frame.view','Frame4'));
+
+});
+</script>
+</head>
+<body>
+
+<h2>Frame Layout</h2>
+
+<form id="form"></form>
+
+</body>
+</html>

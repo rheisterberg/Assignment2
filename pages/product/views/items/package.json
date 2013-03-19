@@ -1,0 +1,8 @@
+{
+
+    "name" : "com.walmart.product.items",
+    "main" : "./items.js",
+
+    "template" : "./items.dust"
+
+}

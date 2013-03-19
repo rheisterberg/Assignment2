@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Error</h2>
+
+<script type="text/javascript">
+
+function call1() {
+	return [0].abc();
+}
+
+function call2() {
+	return call1();
+}
+
+function call3() {
+	return call2();
+}
+
+$(document).ready(function() {
+	snap.require('snap.console.Console');
+	call3();
+});
+
+</script>
+</body>
+</html>

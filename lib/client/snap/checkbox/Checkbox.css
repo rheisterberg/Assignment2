@@ -1,0 +1,23 @@
+
+div.cbx {
+	position:relative;
+	margin:3px 0 0 20px; padding:0 2px;
+	text-indent:-23px;
+}
+
+div.cbx a.cbx {
+	position:relative; margin:0px 2px;
+	color:#333; text-decoration:none; cursor:pointer;
+}
+
+div.cbx a.cbx:hover {
+	color:#1958bd; cursor:pointer;
+}
+
+div.cbx span.cbx {
+	position:relative; top:2px;
+}
+
+div.cbx.d {
+	cursor:default;
+}

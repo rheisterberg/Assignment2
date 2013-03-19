@@ -1,0 +1,41 @@
+<a class="lv-1st" name="{getItemHex}"></a>
+<table id="{eid}"  listingid="{dd}" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers" r="{rank}" class="li rsittlref">
+	 <tbody itemtype="http://schema.org/Product" itemscope="" itemprop="itemOffered">
+		<tr itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+			<td class="pic p{imgSize} lt">
+					<div class="picW">
+						<div class="s{imgSize}">
+							{#hasImage}<a itemprop="url" class="img" href="{vi}"><img itemprop="image" alt="Item image" class="{getImageClass}" src="{getImageSrc}"></a>
+							{:else}<a class="img noImage" href="{vi}"><p>No image available</p></a>{/hasImage}
+						</div>
+					{#sold}<div class="itmBanner sold"><b>SOLD</b></div>{/sold}
+					{#getNotSold}<div class="itmBanner notsold"><b>NOT SOLD</b></div>{/getNotSold}
+					{#getSoldCount}<div class="itmBanner itmCount"><b>{getSoldCount} Sold</b></div>{/getSoldCount}
+					</div>
+			</td>
+		<td class="dtl">
+			<div class="ittl"><a itemprop="name" title="{ttl}" class="vip" href="{vi}">{ttl}</a></div>
+			{#hasSubtitle}<div class="sttl dyn">${sttl}</div>{/hasSubtitle}
+			<div class="dyn dynS"></div>
+			<div class="clr"></div>
+			<div class="logos"></div>
+			<div class="anchors"><div class="group"></div></div>
+		</td>
+		<td class="col3">
+			<span class="tme">
+				<b class="hidlb">Time left:</b>
+				<span class="{getTimeClass} timeMs" timems="{ending}"></span>
+			</span>
+		</td>
+		<td class="prc">
+			{#auction}
+				<div class="{getBidClass}">{bidprice}</div>
+				<div class="bids">{getBids}</div>
+			{/auction}
+			{#buyItNow}
+				<div class="{getBinClass}">{binprice}</div>
+			{/buyItNow}
+		</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,12 @@
+span.afi {position:relative; display:inline-block;z-index:1}
+span.afi #_fsb_nkw {height: 17px; padding: 6px 3px;}
+span.afi .afi {float: left;}
+span.afi span.afi.disabled { color: #999; border-radius: 4px; cursor: default; z-index: 1; position: absolute; top: 5px; padding: 3px 4px 4px; vertical-align:middle; display: none;}
+span.afi span.afi.disabled.ie { top: 5px; }
+span.afi span.afi.disabled.hover  {  background: #eee;}
+span.afi .removeCat {left: 2px; cursor: pointer; display:inline-block; height:14px; width: 14px; background: url(${res.img.local.walmart.query.dashClear_png}) no-repeat; visibility:hidden; top:2px; position: relative;}
+span.afi .ie .removeCat { top: 3px; }
+span.afi .ie.ie7 .removeCat { top: 0; } 
+span.afi span.afi.disabled.hover .removeCat { visibility: visible; }
+span.afi .removeCat:hover { background-position: 0 -15px; }
+span.afi b.afi {position:absolute; float: none; padding: 0; display:none; top: 12px; right: 145px; width:12px; height:10px; cursor:pointer; background:transparent url(${res.img.pics.icons.iconAutofillDown_12x10_gif}) no-repeat 0 0}

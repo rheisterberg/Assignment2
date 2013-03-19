@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Radio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<script type=text/javascript src="../../Snap.js"></script>
+
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<h2>Radio Buttons</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console').show();
+
+	var Panel = snap.require('snap.panel.Panel');
+	var Radio = snap.require('snap.radio.Radio');
+
+	var panel = new Panel({
+		title:'Radio Buttons',
+		styles:{elem:{width:'200px',border:'1px solid #ccc'},body:{padding:'10px'}},
+		children:[
+			new Radio({name:'Radio',value:'1',text:'Default',href:'#Default'}),
+			new Radio({name:'Radio',value:'1',text:'Selected',href:'#Selected',selected:true}),
+			new Radio({name:'Radio',value:'1',text:'Disabled',disabled:true})
+		],
+		target:document.body
+	});
+
+});
+</script>
+</body>
+</html>

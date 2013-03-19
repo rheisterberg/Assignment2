@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tree Layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Tree Layout</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var books = 'Books.gif';
+
+	var book = 'Book.gif';
+	var page = 'Page.gif';
+	
+	var Tree = snap.require('snap.tree.Tree');
+	var Node = snap.require('snap.tree.TreeNode');
+
+	var core = new Node({
+		icon:'Book.gif',
+		text:'core',
+		children:[
+			new Node({icon:book,text:'button'}),
+			new Node({icon:book,text:'console'}),
+			new Node({icon:book,text:'panel'}),
+			new Node({icon:book,text:'splitter'}),
+			new Node({icon:book,text:'window'}),
+			new Node({icon:page,text:'Observable'}),
+			new Node({icon:page,text:'Component'}),
+			new Node({icon:page,text:'Container'}),
+			new Node({icon:page,text:'Layout'}),
+			new Node({icon:page,text:'Viewport'})
+		],
+		expanded:true
+	});
+
+	var framework = new Node({
+		icon:books,
+		text:'ejo',
+		children:[
+			new Node({icon:book,text:'ajax'}),
+			core,
+			new Node({icon:book,text:'dom'}),
+			new Node({icon:book,text:'layout'})
+		],
+		expanded:true
+	});
+
+	var tree = new Tree({
+			styles:{elem:{width:'200px',margin:'10px',padding:'5px',border:'1px solid #ccc'}},
+			children:[framework],
+			target:document.body
+	});
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<div id="{eid}" class="csts">
+	{#elements}<span class="cst">{text}<a class="clr-c" href="{href}"/></span>{/elements}
+	{#href}<span class="all"><a class="clr-a" href="{href}">Clear all</a></span>{/href}
+</div>

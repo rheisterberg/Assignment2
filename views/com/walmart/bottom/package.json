@@ -1,0 +1,7 @@
+{
+
+    "name" : "com.walmart.bottom",
+    "main" : "./bottom.js",
+
+    "template" : "./bottom.dust"
+}

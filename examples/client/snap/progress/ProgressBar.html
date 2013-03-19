@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Progress Bar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+<style type="text/css" rel="stylesheet">
+    .progress h3 {margin-left:20px}
+</style>
+
+</head>
+<body>
+
+<h2>Progress Bar</h2>
+
+<div class="progress">
+
+    <h3>Progress Bar</h3>
+    <div id="Progress"></div>
+
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    snap.require('snap.console.Console');
+
+    var styles = {elem:{margin:'10px',width:'200px',border:'1px solid #ccc'}};
+
+    var ProgressBar = snap.require('snap.progress.ProgressBar');
+
+    var progress = new ProgressBar({
+        styles:styles,
+        target:'#Progress'
+    });
+
+});
+</script>
+</body>
+</html>

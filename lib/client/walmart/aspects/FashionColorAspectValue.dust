@@ -1,0 +1,2 @@
+<li class="clrsw {clr}" {#hexValue}style="background-color:{hexValue}"{/hexValue} title="{title}{#showCount}&nbsp; {cnt}{/showCount}"><a class="clr-a" href="{url}"></a></li>
+			

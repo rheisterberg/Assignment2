@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Button</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Button</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var group = 'Group.gif';
+	var person = 'Person.gif';
+
+	var arrow = 'ArrowDownEnabled.gif';
+	var styles = {elem:{width:'400px'}};
+
+    var Container = snap.require('snap.Container');
+    var ToolButton = snap.require('snap.toolbar.ToolButton');
+
+    var Panel = snap.require('snap.panel.Panel');
+
+    var Menu = snap.require('snap.menu.Menu');
+    var Item = snap.require('snap.menu.Item');
+
+	new Panel({
+		title:'Buttons (Icon Only)',
+		styles:styles,
+		children:[
+			new ToolButton({icon:person,classes:{elem:'tbtn sml blu'},title:'Small'}),
+			new ToolButton({icon:person,classes:{elem:'tbtn med blu'},title:'Small'}),
+			new ToolButton({icon:person,classes:{elem:'tbtn lrg blu'},title:'Small'})
+		],
+		target:document.body
+	});
+
+	new Panel({
+		title:'Buttons (Text Only)',
+		styles:styles,
+		children:[
+			new ToolButton({text:'Small',classes:{elem:'tbtn sml blu'}}),
+			new ToolButton({text:'Medium',classes:{elem:'tbtn med blu'}}),
+			new ToolButton({text:'Large',classes:{elem:'tbtn lrg blu'}})
+		],
+		target:document.body
+	});
+
+	new Panel({
+		title:'Buttons (Icons Left)',
+		styles:styles,
+		children:[
+			new ToolButton({icon:person,text:'Small',classes:{elem:'tbtn sml blu lt'}}),
+			new ToolButton({icon:person,text:'Medium',classes:{elem:'tbtn blu med blu lt'}}),
+			new ToolButton({icon:person,text:'Large',classes:{elem:'tbtn blu lrg blu lt'}})
+		],
+		target:document.body
+	});
+
+	new Panel({
+		title:'Buttons (Icons Right)',
+		styles:styles,
+		children:[
+			new ToolButton({icon:person,text:'Small',classes:{elem:'tbtn sml blu rt'}}),
+			new ToolButton({icon:person,text:'Medium',classes:{elem:'tbtn med blu rt'}}),
+			new ToolButton({icon:person,text:'Large',classes:{elem:'tbtn lrg blu rt'}})
+		],
+		target:document.body
+	});
+
+	new Panel({
+		title:'Buttons (Icons Top)',
+		styles:styles,
+		children:[
+			new ToolButton({icon:person,text:'Small',classes:{elem:'tbtn sml blu top'}}),
+			new ToolButton({icon:person,text:'Medium',classes:{elem:'tbtn med blu top'}}),
+			new ToolButton({icon:person,text:'Large',classes:{elem:'tbtn lrg blu top'}})
+		],
+		target:document.body
+	});
+
+	new Panel({
+		title:'Buttons (Icons Bottom)',
+		styles:styles,
+		children:[
+			new ToolButton({icon:person,text:'Small',classes:{elem:'tbtn sml blu bot'}}),
+			new ToolButton({icon:person,text:'Medium',classes:{elem:'tbtn sml blu bot'}}),
+			new ToolButton({icon:person,text:'Large',classes:{elem:'tbtn lrg blu bot'}})
+		],
+		target:document.body
+	});
+
+	var menu1 = new Menu({
+			styles:{elem:{'background-color':'#eee',border:'1px solid #ccc'}},
+			children:[
+				new Item({icon:person,text:'Person 1'}),
+				new Item({icon:person,text:'Person 2'}),
+				new Item({icon:person,text:'Person 3'})
+			]
+	});
+
+	var menu2 = new Menu({
+			styles:{elem:{'background-color':'#eee',border:'1px solid #ccc'}},
+			children:[
+				new Item({icon:person,text:'Person 1'}),
+				new Item({icon:person,text:'Person 2'}),
+				new Item({icon:person,text:'Person 3'})
+			]
+	});
+
+	var menu3 = new Menu({
+			styles:{elem:{'background-color':'#eee',border:'1px solid #ccc'}},
+			children:[
+				new Item({icon:person,text:'Person 1'}),
+				new Item({icon:person,text:'Person 2'}),
+				new Item({icon:person,text:'Person 3'})
+			]
+	});
+
+	new Panel({
+		title:'Buttons (With Dropdown)',
+		styles:styles,
+		children:[
+			new ToolButton({icon:person,text:'Options',classes:{elem:'tbtn sml blu lt'},arrow:arrow,children:[menu1]}),
+			new ToolButton({icon:person,text:'Options',classes:{elem:'tbtn med blu lt'},arrow:arrow,children:[menu2]}),
+			new ToolButton({icon:person,text:'Options',classes:{elem:'tbtn lrg blu lt'},arrow:arrow,children:[menu3]})
+		],
+		target:document.body
+	});
+
+});
+
+</script>
+</body>
+</html>

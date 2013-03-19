@@ -1,0 +1,31 @@
+
+div.csts {
+	position:relative; min-height:24px; overflow:hidden
+}
+
+span.cst, span.all {
+	position:relative; float:left; display:inline-block; padding:1px 3px 4px 3px; margin:2px 2px 2px 0px;
+	border:1px solid transparent; border-radius:4px; font-size:11px; color:#666; white-space:nowrap;
+}
+
+span.cst:hover {
+	background-color:#eee; color:#1958bd;
+}
+
+span.cst a.clr-c {
+	position:relative; display:inline-block; width:14px; height:14px; text-decoration:none; cursor:pointer; top:3px; margin-left:2px;
+	background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAAyUlEQVR42rWSsQ3DMAwEM4LbbMERNEZKV5rDm2gETZAZNIJG0Ag0CbD4fBEBDFIcQOP5ol/iQ1U/qLUexmlcTtQH97HJG5ehxHINe9HUDN3Q0OimAuLAqVEP+C5o7CgY4oZA6OCORs4jCOdmIzIh+2Q9PTGfMX+r+XfMb86vu7rnf8bn630Yp3E5UX//1WhchhLLNexFUzN0Q0OjmwqIA6dGPeC7oLGjYIgbAqGDOxo5jyCcm43IhOyT9fTEdMb8rebfMb85+V29AXAYhSZOQVSlAAAAAElFTkSuQmCC) no-repeat;
+}
+
+span.cst:hover a.clr-c {
+	background-position:0px -14px;
+}
+
+span.all a.clr-a {
+	position:relative; display:inline-block; padding:4px 0px; color:#666; text-decoration:none; cursor:pointer;
+}
+
+span.all a.clr-a:hover {
+	color:#1958bd;
+}
+

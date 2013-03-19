@@ -1,0 +1,7 @@
+{
+
+    "name" : "com.walmart.center",
+    "main" : "./center.js",
+
+    "template" : "./center.dust"
+}

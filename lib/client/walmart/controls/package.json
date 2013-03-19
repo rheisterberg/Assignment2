@@ -1,0 +1,50 @@
+{
+
+    "type": "module",
+    "name":"walmart.controls",
+    "version":"1.0",
+    "description":"Search Controls",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"path":"Items.css"},
+        {"path":"Items.js"},
+
+        {"path":"Items.dust.js"},
+        {"path":"Items.rhtml"},
+
+        {"path":"Listings.css"},
+        {"path":"Listings.js"},
+
+        {"path":"Listings.dust.js"},
+        {"path":"Listings.rhtml"},
+
+        {"path":"Pager.css"},
+        {"path":"Pager.js"},
+
+        {"path":"Pager.dust.js"},
+        {"path":"Pager.rhtml"},
+
+        {"path":"SortBy.css"},
+        {"path":"SortBy.js"},
+
+        {"path":"SortBy.dust.js"},
+        {"path":"SortBy.rhtml"},
+
+        {"path":"ViewAs.css"},
+        {"path":"ViewAs.js"},
+
+        {"path":"ViewAs.dust.js"},
+        {"path":"ViewAs.rhtml"},
+
+        {"path":"Controls.css"},
+
+        {"path":"/srp_snap/ControlBar.4cc"},
+        {"path":"/srp_snap/Pagination.4cc"}
+
+    ]
+
+}

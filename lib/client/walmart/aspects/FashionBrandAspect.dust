@@ -1,0 +1,10 @@
+<div id="{eid}" class="pnl fashion"{#hidden} style="display:none"{/hidden}>
+	<div class="pnl-h">
+		{#action}<a class="more" href="javascript:;">{#content path="srp_snap/Aspects.seeAll"/}<span class="hdn">{title}</span></a>{/action}
+		<span class="pnl-h"><h3>{title}</h3></span>
+	</div>
+	<div class="pnl-b"{#closed} style="display:none"{/closed}>
+		<input type="text" size="30" maxlength="300" placeholder="{placeholder}" class="search"/>
+		<div class="brnd">{#widgets:children/}</div>
+	</div>
+</div>

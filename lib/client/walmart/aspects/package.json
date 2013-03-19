@@ -1,0 +1,137 @@
+{
+
+    "type": "module",
+    "name":"walmart.aspects",
+    "version":"1.0",
+    "description":"Search Aspect Panel",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"module":"snap.radio"},
+        {"module":"snap.checkbox"},
+
+        {"module":"snap.calendar"},
+        {"module":"snap.throbber"},
+
+        {"module":"snap.scrollbar.vertical"},
+        {"module":"snap.slider.currency"},
+
+        {"path":"AspectType.js"},
+
+        {"path":"DefaultAspect.js"},
+
+        {"path":"DefaultAspect.dust.js"},
+        {"path":"DefaultAspect.rhtml"},
+
+        {"path":"DefaultAspectFlyout.css"},
+        {"path":"DefaultAspectFlyout.js"},
+
+        {"path":"GroupAspect.js"},
+
+        {"path":"GroupAspectFlyout.css"},
+        {"path":"GroupAspectFlyout.js"},
+
+        {"path":"DateAspect.css"},
+        {"path":"DateAspect.js"},
+
+        {"path":"DateAspect.dust.js"},
+        {"path":"DateAspect.rhtml"},
+
+        {"path":"DateAspectCalendar.js"},
+
+        {"path":"DateAspectFlyout.css"},
+        {"path":"DateAspectFlyout.js"},
+
+        {"path":"DateAspectFlyout.dust.js"},
+        {"path":"DateAspectFlyout.rhtml"},
+
+        {"path":"DistanceAspectFlyout.css"},
+        {"path":"DistanceAspectFlyout.js"},
+
+        {"path":"DistanceAspectRadius.dust.js"},
+        {"path":"DistanceAspectRadius.rhtml"},
+
+        {"path":"DistanceAspectFlyout.dust.js"},
+        {"path":"DistanceAspectFlyout.rhtml"},
+
+        {"path":"FashionBrandAspect.css"},
+        {"path":"FashionBrandAspect.js"},
+
+        {"path":"FashionBrandAspect.dust.js"},
+        {"path":"FashionBrandAspect.rhtml"},
+
+        {"path":"FashionColorAspect.css"},
+        {"path":"FashionColorAspect.js"},
+
+        {"path":"FashionColorAspect.dust.js"},
+        {"path":"FashionColorAspect.rhtml"},
+
+        {"path":"FashionColorAspectValue.dust.js"},
+        {"path":"FashionColorAspectValue.rhtml"},
+
+        {"path":"LocationAspect.js"},
+        {"path":"LocationAspectFlyout.css"},
+        {"path":"LocationAspectFlyout.js"},
+
+        {"path":"MultiListingAspectFlyout.css"},
+        {"path":"MultiListingAspectFlyout.js"},
+
+        {"path":"MultiListingAspectFlyout.dust.js"},
+        {"path":"MultiListingAspectFlyout.rhtml"},
+
+        {"path":"PriceFormAspect.css"},
+        {"path":"PriceFormAspect.js"},
+
+        {"path":"PriceFormAspect.dust.js"},
+        {"path":"PriceFormAspect.rhtml"},
+
+        {"path":"PriceFormAspectFlyout.css"},
+        {"path":"PriceFormAspectFlyout.js"},
+
+        {"path":"PriceFormAspectFlyout.dust.js"},
+        {"path":"PriceFormAspectFlyout.rhtml"},
+
+        {"path":"PriceSliderAspect.js"},
+
+        {"path":"PriceSliderAspect.dust.js"},
+        {"path":"PriceSliderAspect.rhtml"},
+
+        {"path":"PriceSliderAspectFlyout.css"},
+        {"path":"PriceSliderAspectFlyout.js"},
+
+        {"path":"SellerAspect.js"},
+        {"path":"SellerAspectFlyout.css"},
+        {"path":"SellerAspectFlyout.js"},
+
+        {"path":"SellerAspectFlyout.dust.js"},
+        {"path":"SellerAspectFlyout.rhtml"},
+
+        {"path":"TiledAspectValue.dust.js"},
+        {"path":"TiledAspectValue.rhtml"},
+
+        {"path":"AspectFlyoutForm.dust.js"},
+        {"path":"AspectFlyoutForm.rhtml"},
+
+        {"path":"AspectFlyout.css"},
+        {"path":"AspectFlyout.js"},
+
+        {"path":"AspectPanel.css"},
+        {"path":"AspectPanel.js"},
+
+        {"path":"AspectPanel.dust.js"},
+        {"path":"AspectPanel.rhtml"},
+
+        {"path":"/walmart/utils/NumberFormatter.js"},
+        {"path":"/walmart/utils/CurrencyFormatter.js"},
+
+        {"path":"/srp_snap/Aspects.4cc"},
+        {"path":"/srp_snap/GlobalAspects.4cc"},
+        {"path":"/srp_snap/SellerAspect.4cc"},
+        {"path":"/srp_snap/DistanceAspect.4cc"}
+
+    ]
+
+}

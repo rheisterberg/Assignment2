@@ -1,0 +1,12 @@
+{
+
+    "name" : "com.walmart.product.filter.brand",
+    "main" : "./brand.js",
+
+    "template" : "../filter.dust",
+    
+    "requires" : [
+        "../filter"
+    ]
+
+}

@@ -1,0 +1,3 @@
+<div id="{eid}" class="rbx"{#disabled} d{/disabled}>
+	<a class="rbx"{#href} href="{href}"{/href}><label><input type="radio"{#name} name="{name}"{/name}{#value} value="{value}"{/value} class="rbx"{#selected} checked="true"{/selected}{#disabled} disabled="true"{/disabled} /><span class="rbx">{text|s}</span></label></a>
+</div>

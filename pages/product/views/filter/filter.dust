@@ -1,0 +1,7 @@
+<div id="{eid}" class="filter">
+    <label class="label">{label}</label>
+    <div class="button">
+        <span class="text">{value}</span><b class="arrow"></b>
+        <div class="layer">{#options}<a class="option">{name}</a>{/options}</div>
+    </div>
+</div>

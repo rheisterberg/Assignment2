@@ -1,0 +1,30 @@
+{
+	"type":"module",
+	"name":"ebay.utils",
+	"version":"1.0",
+	"description":"eBay Utils",
+	"homepage":"http://wiki2.arch.ebay.com/display/RAPTOR/Home",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@ebay.com"}
+	],
+
+	"extensions":{
+		"ebay.utils.flashdetector": {
+			"includes": [
+				 {"path":"FlashDetector.js"}
+			]
+		},
+		"ebay.utils.currency": {
+			"includes": [
+				 {"path":"NumberFormatter.js"},
+				 {"path":"CurrencyFormatter.js"}
+			]
+		},
+		"ebay.utils.numberformatter": {
+			"includes": [
+				 {"path":"NumberFormatter.js"}
+			]
+		}
+	}
+
+}

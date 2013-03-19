@@ -1,0 +1,23 @@
+{
+    "type": "module",
+    "name":"snap.utils",
+    "version":"1.0",
+    "description":"Snap Client Utilities",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "extensions":{
+        "snap.utils.base64": {
+            "includes": [
+               {"path":"Base64.js"}
+            ]
+        },
+        "snap.utils.utf8": {
+            "includes": [
+               {"path":"Utf8.js"}
+            ]
+        }
+    }
+
+}

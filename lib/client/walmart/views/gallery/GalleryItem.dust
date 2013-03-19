@@ -1,0 +1,31 @@
+
+<td id="{eid}" class="ic" r="{rank}">
+<a name="{getItemHex}">
+</a>
+<div class="img">
+<table class="img">
+<tbody>
+<tr>
+<td class="img">
+<a href="{vi}" class="img">
+{#hasImage}<a class="img" href="{vi}"><img alt="Item image" class="{getImageClass}" src="{getImageSrc}"></a>{:else}No Photo{/hasImage}
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="anchors">
+<div class="mi">
+</div>
+</div>
+<div class="ittl">
+<a href="{vi}" class="vip" title="{title}">{title}</a>
+</div>
+<div class="prices">
+<div class="bid">
+<span class="lbl">{bids} Bids</span>
+<span class="g-b amt">{binprice}</span>
+</div>
+</div>
+</td>

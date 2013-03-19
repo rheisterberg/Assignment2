@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calendar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<script type=text/javascript src="../../Snap.js"></script>
+
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<h2>Calendar</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var Panel = snap.require('snap.panel.Panel');
+	var Calendar = snap.require('snap.calendar.Calendar');
+
+    var Button = snap.require('snap.button.Button');
+
+	new Calendar({
+		starting1:new Date('06/05/2012'),
+		ending1:new Date('08/31/2012'),
+		target:document.body
+		});
+
+	var launch = new Button({
+		text:'Calendar Popup',
+		styles:{elem:{position:'absolute',top:'100px',left:'300px','text-align':'center'}},
+		classes:{elem:'med blue'},
+		target:document.body
+	});
+
+	launch.subscribe('click',onLaunchPopup);
+
+	var calendar = new Calendar({});
+
+	function onLaunchPopup(event) {
+		calendar.show({current:new Date(),offset:{top:100,left:420}});
+		return false;
+	}
+
+});
+</script>
+</body>
+</html>

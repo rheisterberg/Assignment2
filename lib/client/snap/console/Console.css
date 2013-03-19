@@ -1,0 +1,12 @@
+
+.win.con {width:500px; height:300px}
+
+.win.con .tabs {margin:4px}
+.win.con .tbar {margin:4px}
+
+.win.con .con-c {padding:4px}
+
+.win.con .con-c .log {}
+.win.con .con-c .err {color:#f00}
+.win.con .con-c .time {position:absolute}
+.win.con .con-c .text {padding-left:50px}

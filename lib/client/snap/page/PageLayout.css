@@ -1,0 +1,27 @@
+
+.sz760 #Body {min-width:760px; max-width:940px}
+.sz940 #Body {min-width:940px; max-width:1200px}
+.sz1200 #Body {min-width:1200px; max-width:1200px}
+
+#Header, #Body, #Footer {position:relative}
+
+#Header {position:fixed; z-index:20}
+#Header {top:0px; left:0px; width:100%}
+
+#Body {margin:0px auto; padding:100px 15px 10px 15px}
+#Footer {min-width:800px}
+
+#Top, #Left, #Right, #Bottom {position:relative}
+
+#Left {float:left; z-index:1; width:210px; overflow:hidden}
+#Right {float:right; z-index:1; width:160px; overflow:hidden}
+#Center {margin:0px 0px 0px 225px; _overflow:hidden}
+#Bottom {clear:both}
+
+#TopPanel {position:relative; margin-bottom:10px}
+#LeftPanel {position:relative; z-index:1; top:0px; right:0px; background-color:#fff; _position:static}
+#RightPanel {position:relative; z-index:1; top:0px; left:0px; background-color:#fff; _position:static}
+#CenterPanel {position:relative; _float:left; _width:100%}
+#BottomPanel {position:relative}
+#FootPanel {position:relative}
+

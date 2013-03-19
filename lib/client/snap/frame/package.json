@@ -1,0 +1,17 @@
+{
+
+	"type": "module",
+	"name":"snap.frame",
+	"version":"1.0",
+	"description":"Dust frame",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"FrameLayout.js"}
+
+	]
+
+}

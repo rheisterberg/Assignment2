@@ -1,0 +1,20 @@
+
+div.pager {position:relative; display:inline-block}
+
+div.pager-b {
+	position:relative; margin-top:10px;
+	border-top:1px solid #ccc; text-align:center;
+}
+
+div.pager a.prev, div.pager a.next, div.pager a.page {
+	position:relative; display:inline-block; padding:4px 8px; margin:0px 2px; border-radius:3px; color:#666; text-decoration:none;
+}
+
+div.pager a.prev, div.pager a.next {background-color:#ccc}
+
+div.pager a:hover {color:#1058bd}
+
+div.pager a.selected {background-color:#000; color:#fff}
+div.pager a.disabled {display:none}
+
+

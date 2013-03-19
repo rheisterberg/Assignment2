@@ -1,0 +1,1 @@
+{?head}<li class="tab"><a class="tab-a"><div class="tab-h">{title|s}</div></a></li>{:else}<div id="{eid}" class="tab-b">{#widgets:children/}</div>{/head}

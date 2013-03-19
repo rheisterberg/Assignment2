@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TreeLoader</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Tree Loader</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console')
+	
+    var Container = snap.require('snap.Container');
+    var TreeLoader = snap.require('snap.tree.TreeLoader');
+
+	function onTree(event,tree) {
+
+		var container = Container({
+			styles:{elem:{width:'300px',margin:'20px','padding-top':'5px',border:'1px solid #ccc'}},
+			children:[tree],
+			target:document.body
+		});
+
+	};
+
+	var loader = new TreeLoader({});
+	loader.subscribe('complete',onTree,this);
+	loader.load('TreeLoader.xml',true);
+
+});
+
+</script>
+</body>
+</html>

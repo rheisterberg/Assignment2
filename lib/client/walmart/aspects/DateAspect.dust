@@ -1,0 +1,17 @@
+<div id="{eid}" class="pnl date"{#hidden} style="display:none"{/hidden}>
+	<div class="pnl-h">
+		{#action}<a class="more" href="javascript:;">{#content path="srp_snap/Aspects.seeAll"/}<span class="hdn">{title}</span></a>{/action}
+		<span class="pnl-h"><h3>{title}</h3></span>
+	</div>
+	<div class="pnl-b">
+	  <div class="dt">
+	    <span class="label">{#content path="srp_snap/Aspects.From"/}</span>
+	    <input type="text" name="{fromParam}" value="{fromValue}" placeholder="mm/dd/yyyy" size="10" class="after">
+	  </div>
+	  <div class="dt">
+	    <span class="label">{#content path="srp_snap/Aspects.To"/}</span>
+	    <input type="text" name="{toParam}" value="{toValue}" placeholder="mm/dd/yyyy" size="10" class="before">
+	  </div>
+		<input type="button" class="buttons submit disabled" disabled="disabled">
+	</div>
+</div>

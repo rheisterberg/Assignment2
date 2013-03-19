@@ -1,0 +1,11 @@
+<div id="{eid}" class="items">
+    {#items}
+    <div class="item">
+        <div class="image"><img src="{image}" /></div>
+        <div class="title" title="{name}">{name}</div>
+        <div class="descrip" title="{descrip}">{descrip}</div>
+        <div class="price">${dollars}<sup>.{cents}</sup></div>
+        <div class="rating"><span class="gray"><span class="gold" style="width:{stars}"></span></span></div>
+    </div>
+    {/items}
+</div>

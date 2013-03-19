@@ -1,0 +1,17 @@
+{
+
+	"type": "module",
+	"name":"snap.dragger",
+	"version":"1.0",
+	"description":"Dust Dragger",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"Dragger.js"}
+
+	]
+
+}

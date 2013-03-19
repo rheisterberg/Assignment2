@@ -1,0 +1,3 @@
+<div id="{eid}" class="cbx"{#disabled} d{/disabled}>
+	<a class="cbx"{#href} href="{href}"{/href}><label><input type="checkbox"{#name} name="{name}"{/name}{#value} value="{value}"{/value} class="cbx"{#selected} checked="true"{/selected}{#disabled} disabled="true"{/disabled} /><span class="cbx">{text|s}</span></label></a>
+</div>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scrollbars</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body style="height:2000px">
+
+<h2>Scrollbars</h2>
+
+<h3>Vertical Scrollbar</h3>
+<div id="VerticalScrollbar"></div>
+
+<h3>Horizontal Scrollbar</h3>
+<div id="HorizontalScrollbar"></div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var Component = snap.require('snap.Component');
+	var Container = snap.require('snap.Container');
+
+	var Panel = snap.require('snap.panel.Panel');
+
+	var VerticalScroller = snap.require('snap.scrollbar.vertical.VerticalScroller');
+	var HorizontalScroller = snap.require('snap.scrollbar.horizontal.HorizontalScroller');
+
+	var pstyle = {elem:{height:'20px',border:'1px solid #ccc','text-align':'center'}};
+
+	var vertical = new Container({
+		styles:{elem:{position:'relative',margin:'10px',width:'210px','max-height':'106px',overflow:'hidden',border:'1px solid #ccc'}},
+		children:[
+			new Panel({styles:pstyle,content:'Content 0'}),
+			new Panel({styles:pstyle,content:'Content 1'}),
+			new Panel({styles:pstyle,content:'Content 2'}),
+			new Panel({styles:pstyle,content:'Content 3'}),
+			new Panel({styles:pstyle,content:'Content 4'}),
+			new Panel({styles:pstyle,content:'Content 5'}),
+			new Panel({styles:pstyle,content:'Content 6'}),
+			new Panel({styles:pstyle,content:'Content 7'}),
+			new Panel({styles:pstyle,content:'Content 8'}),
+			new Panel({styles:pstyle,content:'Content 9'}),
+			new Panel({styles:pstyle,content:'Content 10'}),
+			new Panel({styles:pstyle,content:'Content 11'}),
+			new Panel({styles:pstyle,content:'Content 12'}),
+			new Panel({styles:pstyle,content:'Content 13'}),
+			new Panel({styles:pstyle,content:'Content 14'}),
+			new Panel({styles:pstyle,content:'Content 15'}),
+			new Panel({styles:pstyle,content:'Content 16'}),
+			new Panel({styles:pstyle,content:'Content 17'}),
+			new Panel({styles:pstyle,content:'Content 18'}),
+			new Panel({styles:pstyle,content:'Content 19'})
+		],
+		target:'#VerticalScrollbar'
+	});
+
+	new VerticalScroller({auto:false,scrollable:vertical,target:vertical.elem});
+
+	var pstyle = {elem:{position:'relative',width:'800px',height:'80px',border:'1px solid #ccc','text-align':'center'}};
+
+	var horizontal = new Container({
+		styles:{elem:{margin:'10px','max-width':'450px',overflow:'hidden',border:'1px solid #ccc'}},
+		children:[
+			new Panel({styles:pstyle,content:'Content 0'})
+		],
+		target:'#HorizontalScrollbar'
+	});
+
+	new HorizontalScroller({auto:true,scrollable:horizontal,target:horizontal.elem});
+
+});
+</script>
+</body>
+</html>

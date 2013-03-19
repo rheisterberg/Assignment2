@@ -1,0 +1,33 @@
+{
+		"type": "module",
+    "name":"snap.ecma",
+    "version":"1.0",
+    "description":"Snap ECMA Shims",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "extensions":{
+        "snap.ecma.array": {
+            "includes": [
+                      {"path":"Array.js"}
+            ]
+        },
+        "snap.ecma.date": {
+            "includes": [
+                {"path":"Date.js"}
+            ]
+        },
+        "snap.ecma.object": {
+            "includes": [
+                {"path":"Json.js"}
+            ]
+        },
+        "snap.ecma.string": {
+            "includes": [
+                {"path":"String.js"}
+            ]
+        }
+    }
+
+}

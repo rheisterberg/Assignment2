@@ -1,0 +1,26 @@
+	
+.upgrd {width:550px}
+
+.upgrd-msg {
+	position:relative; padding:10px;
+}
+
+.upgrd-msg h3.header {
+	font-family:Arial; font-weight:bold;
+}
+
+.upgrd-lnks {
+	position:relative; overflow:hidden;
+}
+
+.upgrd-lnk {
+	position:relative; display:inline-block; width:100px; height:100px; margin:20px 10px; border:1px solid #fff;
+}
+.upgrd-lnk:hover {
+	border-color:#ccc
+}
+
+a.firefox {background-image:url(${res.img.shared['modules-dust/snap/dust/upgrade/Firefox.gif']}?e)}
+a.chrome {background-image:url(${res.img.shared['modules-dust/snap/dust/upgrade/Chrome.gif']}?e)}
+a.explorer {background-image:url(${res.img.shared['modules-dust/snap/dust/upgrade/Explorer.gif']}?e)}
+a.safari {background-image:url(${res.img.shared['modules-dust/snap/dust/upgrade/Safari.gif']}?e)}

@@ -1,0 +1,11 @@
+<div class="month">
+<table>
+	<thead>
+		<tr><td class="head" colspan="7">
+				<div class="title"></div>
+		</td></tr>
+		<tr class="days"><td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td></tr>
+	</thead>
+	<tbody></tbody>
+</table>
+</div>

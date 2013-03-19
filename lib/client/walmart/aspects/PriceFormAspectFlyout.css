@@ -1,0 +1,9 @@
+/* See Sprites.css for background image */
+
+.asf-v.price input.price {width:50px;}
+
+.asf-v.price input.submit  {
+	width:20px; height:20px; padding:0; border:none;
+	background-color: transparent; background-attachment: scroll; background-position: -139px -110px;
+}
+

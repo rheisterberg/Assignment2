@@ -1,0 +1,1 @@
+<li id="{eid}" class="item"><a class="i">{#widgets:children/}</a></li>

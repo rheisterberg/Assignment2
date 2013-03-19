@@ -1,0 +1,1 @@
+<div id="{eid}" class="win" @role="dialog" draggable="false"><div class="win-s shdw"></div><div class="win-f"><div class="win-h"><a class="win-c" tabindex="0"></a><div class="win-t">{title}</div></div><div class="win-b">{#widgets:children/}</div></div></div>

@@ -1,0 +1,54 @@
+
+.calendar {
+	position:relative;
+	width:168px;
+}
+
+.calendar .prev {
+	position:absolute; top:0px; left:0px; padding:4px 2px; background-color:#999;
+}
+
+.calendar .next {
+	position:absolute; top:0px; right:0px; padding:4px 2px; background-color:#999;
+}
+
+.calendar .prev .arrows {
+	position:relative; width:16px; height:16px; background-position:5px -986px; cursor:pointer;
+}
+
+.calendar .next .arrows {
+	position:relative; width:16px; height:16px; background-position:5px -1070px; cursor:pointer;
+	cursor:pointer;
+}
+
+.calendar .prev.ds .arrows, .calendar .next.ds .arrows {
+	visibility:hidden;
+}
+
+.calendar .scrlr {position:relative; overflow:hidden; border:1px solid #ccc; border-top-width:0px}
+
+.calendar .months {position:relative; width:800px; overflow:hidden}
+.calendar .month {float:left; position:relative; height:155px; padding-left:1px; border-left:1px solid #ccc}
+
+.calendar .title {
+	padding:6px 0px;
+	font-weight:bold; font-size:13px; color:#fff; text-align:center;
+	background-color:#999;
+}
+
+.calendar tr.days td {
+	padding:2px 8px; font-weight:bold; font-size:11px; text-align:center;
+}
+
+.calendar tr.week td.day {
+	padding:3px; border:2px solid #fff; font-size:11px; color:#333; text-align:center; vertical-align:middle; cursor:pointer;
+}
+
+.calendar tr.week td.day:hover {
+	color:#fff; background-color:#999;
+}
+
+.calendar tr.week td.day.ds {
+	color:#ccc; background-color:inherit; cursor:default;
+}
+

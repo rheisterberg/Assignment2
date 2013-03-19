@@ -1,0 +1,24 @@
+{
+
+	"type": "module",
+	"name":"walmart.view.gallery",
+	"version":"1.0",
+	"description":"Search Gallery View",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"GalleryItem.dust.js"},
+		{"path":"GalleryItem.rhtml"},
+
+		{"path":"GalleryProduct.dust.js"},
+		{"path":"GalleryProduct.rhtml"},
+
+		{"path":"GalleryView.js"}
+
+	]
+
+}
+

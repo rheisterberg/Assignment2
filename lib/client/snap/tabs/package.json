@@ -1,0 +1,27 @@
+{
+
+    "type": "module",
+    "name":"snap.tabs",
+    "version":"1.0",
+    "description":"Dust Tabs",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"path":"Tabs.css"},
+
+        {"path":"Tab.js"},
+        {"path":"Tab.dust.js"},
+        {"path":"Tab.rhtml"},
+
+        {"path":"TabsLayout.js"},
+
+        {"path":"Tabs.js"},
+        {"path":"Tabs.dust.js"},
+        {"path":"Tabs.rhtml"}
+
+    ]
+
+}

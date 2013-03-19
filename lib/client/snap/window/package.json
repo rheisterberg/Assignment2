@@ -1,0 +1,27 @@
+{
+
+    "type": "module",
+    "name":"snap.window",
+    "version":"1.0",
+    "description":"Dust Button",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"module":"snap.dragger"},
+        {"module":"snap.resizer"},
+
+        {"path":"Window.css"},
+
+        {"path":"Mask.js"},
+        {"path":"Stack.js"},
+
+        {"path":"Window.js"},
+        {"path":"Window.dust.js"},
+        {"path":"Window.rhtml"}
+
+    ]
+
+}

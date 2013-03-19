@@ -1,0 +1,5 @@
+
+.win-a {position:absolute; display:none; background-image: url(http://pics.ebaystatic.com/aw/pics/cmp/ds2/sprOverlayPointers.png?e)}
+
+.win-a.l { top:10px; left:-17px; width:31px; height:45px; background-position:0px 0px}
+.win-a.r { top:10px; right:-31px; width:31px; height:45px; background-position:0px -53px}

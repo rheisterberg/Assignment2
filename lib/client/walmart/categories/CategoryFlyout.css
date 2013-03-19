@@ -1,0 +1,47 @@
+
+.cat-f {margin:10px 10px 10px 0px}
+
+.cat-f .ttl {padding:5px 20px}
+
+.cat-f .lnk {font-weight:bold; font-size:15px; color:#333; text-decoration:none; cursor:pointer}
+.cat-f .lnk:hover {color:#1958bd}
+
+.cat-f .cnt {margin-left:10px; font-weight:bold; font-size:13px; color:#999}
+
+.cat-f .ttrs {min-height:130px; max-height:500px; max-width:720px}
+
+.cat-p {position:relative; width:210px; margin:15px}
+
+.cat-p .cat-ph {position:relative; font-weight:bold}
+
+.cat-p .cat-pb {position:relative; padding-bottom:5px}
+.cat-p .cat-pm {position:relative; display:none}
+
+.cat-p .cat-pl {position:relative; padding:5px; overflow:hidden}
+
+.cat-p a.cat-pa {position:relative; overflow:hidden; color:#333; font-size:12px; text-decoration:none; cursor:pointer}
+.cat-p a.cat-pa:hover {color:#1958bd; text-decoration:none}
+
+.cat-p .cat-pl span.cat-pc {float:right; position:relative; top:2px; margin-left:5px; color:#999; font-weight:normal; font-size:11px}
+.cat-p .cat-ph span.cat-pc {font-weight:bold}
+
+.cat-p div.cat-po {position:relative; padding:5px; overflow:hidden}
+.cat-p a.cat-po {position:relative; display:inline-block; overflow:hidden; color:#333; font-size:12px; text-decoration:none; cursor:pointer}
+
+.cat-p span.cat-po {
+	float:left;
+}
+
+.cat-p span.cat-po + span {
+	float:left; position:relative; display:inline-block; height:0px; margin-left:5px;
+	border-style:solid;border-width:5px;
+}
+
+.cat-p span.more + span {
+	top:4px; border-color:#1958bd transparent transparent;
+}
+
+.cat-p span.fewer + span {
+	top:-2px; border-color:transparent transparent #1958bd;
+}
+

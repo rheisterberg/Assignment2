@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkbox</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<script type=text/javascript src="../../Snap.js"></script>
+
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<h2>Checkbox</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console').show();
+
+	var Panel = snap.require('snap.panel.Panel');
+	var Checkbox = snap.require('snap.checkbox.Checkbox');
+
+	var panel = new Panel({
+		title:'Checkboxes',
+		styles:{elem:{width:'200px',border:'1px solid #ccc'},body:{padding:'10px'}},
+		children:[
+			new Checkbox({name:'Default',value:'1',text:'Default',href:'#'}),
+			new Checkbox({name:'Selected',value:'2',text:'Selected',href:'#',selected:true}),
+			new Checkbox({name:'Disabled',value:'3',text:'Disabled',disabled:true})
+		],
+		target:document.body
+	});
+
+});
+</script>
+</body>
+</html>

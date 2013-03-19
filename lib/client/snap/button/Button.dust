@@ -1,0 +1,1 @@
+<span id="{eid}" class="btn"><button type="{type}"{?value} value="{value}"{/value}>{text}</button></span>

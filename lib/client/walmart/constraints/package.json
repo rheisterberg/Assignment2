@@ -1,0 +1,21 @@
+{
+
+	"type": "module",
+	"name":"walmart.constraints",
+	"version":"1.0",
+	"description":"Search Constraints",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"Constraints.css"},
+		{"path":"Constraints.js"},
+
+		{"path":"Constraints.dust.js"},
+		{"path":"Constraints.rhtml"}
+
+	]
+
+}

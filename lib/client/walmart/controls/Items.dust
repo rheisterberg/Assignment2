@@ -1,0 +1,6 @@
+<div id="{eid}" class="ipp">
+    <div class="ipp-cur">
+        {#content path="srp_snap/Pagination.itemsPerPage"/}:&nbsp;<span class="ipp-cur">{selected}<b class="ipp-arr"></b></span>
+    </div>
+	<div class="ipp-lyr">{#items}<a class="ipp-lnk" href="{url}">{size}</a>{/items}</div>
+</div>

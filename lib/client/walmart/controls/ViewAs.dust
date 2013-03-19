@@ -1,0 +1,9 @@
+<div id="{eid}" class="viewas">
+    <div class="viewas-cur">
+        {#content path="srp_snap/ControlBar.View"/}:&nbsp;<b class="viewas-{type}"></b><b class="viewas-arr"></b>
+    </div>
+    <div class="viewas-lyr">
+        {#views}<a class="viewas-lnk" type="{type}" "href="{href}">{text}<b class="viewas-{type}"></b></a>{/views}
+        <a id="custLink" class="viewas-lnk" type="customize" "href="{href}">{#content path="srp_snap/ControlBar.customizedview"/}<b class="viewas-customize"></b></a>
+    </div>
+</div>

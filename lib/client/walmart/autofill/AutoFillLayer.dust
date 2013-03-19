@@ -1,0 +1,17 @@
+<div id="{eid}" class="afl">
+	<div class="sugg"></div>
+	<div class="prod">
+		<div class="titl">
+			<span>{#content path="srp_snap/AutoFillLayer.PopularProducts"/}</span>
+		</div>
+	<div class="body"></div>
+</div>
+<div class="none">{#content path="srp_snap/AutoFillLayer.NoSuggestions"/}</div>
+	<div class="related">
+		<div class="body"></div>
+	</div>
+	<div class="logo"></div>
+	<div class="foot">
+		<a href="javascript:;">{#content path="srp_snap/AutoFillLayer.DisableBaySuggestions"/}</a>
+	</div>
+</div>

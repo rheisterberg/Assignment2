@@ -1,0 +1,9 @@
+<html>
+<head><title>{title}</title></head>
+<body><h1>{title}</h1><hr>
+<pre>
+<a href="{parent}">[To Parent Directory]</a><br><br>
+{#files} {date} {#dir}   &lt;dir&gt;{:else}{size}{/dir} <a href="{href}">{name}</a><br>{/files}
+</pre>
+</body>
+</html>

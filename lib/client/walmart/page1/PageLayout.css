@@ -1,0 +1,52 @@
+
+body {position:relative; min-height:1024px}
+
+.sz760 #Body {min-width:760px; max-width:940px}
+.sz940 #Body {min-width:940px; max-width:1200px}
+.sz1200 #Body {min-width:1200px; max-width:1200px}
+.sz980 #Body {min-width:980px; max-width:980px}
+
+#Head, #Body, #Foot {position:relative}
+
+#Head {position:fixed; z-index:20}
+#Head {top:0px; left:0px; width:100%}
+
+#Body {margin:0px auto; padding:0px 15px 10px 15px}
+#Foot {min-width:800px}
+
+#Top, #Left, #Right, #Bottom {position:relative}
+
+#Left {float:left; z-index:1; width:210px}
+#Right {float:right; z-index:1; width:160px; display:none}
+#Center {margin:0px 0px 0px 225px; _overflow:hidden; zoom:1}
+#Bottom {clear:both}
+
+.sz1200 #Center.rr_present {margin:0px 175px 0px 225px}
+
+#TopPanel {position:relative; margin-bottom:0px}
+#LeftPanel {position:relative; z-index:1; top:0px; right:0px; background-color:#fff; _position:static}
+#RightPanel {position:relative; z-index:1; top:0px; left:0px; background-color:#fff; _position:static}
+#CenterPanel {position:relative; _float:left; _width:100%}
+#BottomPanel {position:relative}
+#FootPanel {position:relative}
+
+#Left, #Center {
+	padding-top:15px;
+}
+
+#gh-vnl {z-index:99}
+
+.g-hdn {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    outline: medium none;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    z-index: -1;
+}
+
+.wnd-c{
+	z-index:7;
+}

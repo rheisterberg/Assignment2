@@ -1,0 +1,1 @@
+Number of bids <input class="txt" type="text" name="{lowerBoundParam}" value="{lowerBound}"> to <input class="txt" type="text" name="{upperBoundParam}" value="{upperBound}">

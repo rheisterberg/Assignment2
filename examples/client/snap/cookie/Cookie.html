@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Client Cookies</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+<body>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console').show();
+
+	var Cookies = snap.require('ebay.cookies');
+
+	var tzo = Cookies.getTimezoneCookie();
+	if (tzo == null) Cookies.setTimezoneCookie();
+
+	snap.log('debug','Cookies','js',Cookies.readCookie('ebay','js'));
+	snap.log('debug','Cookies','tzo',Cookies.readCookie('dp1','tzo'));
+
+    var Button = snap.require('snap.button.Button');
+    
+	var button = new Button({
+		text:'Update Cookies',
+		styles:{elem:{position:'relative',top:'40px',left:'40px','text-align':'center'}},
+		classes:{elem:'med blue'},
+		target:document.body
+	});
+
+	button.subscribe('click',onUpdateCookies);
+
+	function onUpdateCookies(event) {
+	
+		var cookie = Cookies.readCookie('ebay','js');
+		Cookies.writeCookielet('ebay','js',new String(parseInt(cookie) + 1));
+	
+		snap.log('debug','Cookies','js',Cookies.readCookie('ebay','js'));
+
+	}
+
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<div id="{eid}" class="cbx listing">
+	<div class="asp-e LH_MIL"><b class="sprIconStatusMsg"/>{#content path="srp_snap/Aspects.enterValidNumber"/}</div>
+	<a class="cbx">
+		<input type="checkbox" class="cbx" name="LH_MIL" value="1">
+		<span class="cbx">{#content path="srp_snap/Aspects.multipleItemListing"/}</span>
+	</a>
+</div>

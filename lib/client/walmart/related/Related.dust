@@ -1,0 +1,4 @@
+<div id="{eid}" class="rls">
+	<span class="rls-h">{#content path="srp_snap/Related.RelatedSearches"/}: </span>
+	<span class="rls-b">{#searches}<a class="rls-a" href="{href}">{related|s}</a>{/searches}</span>
+</div>

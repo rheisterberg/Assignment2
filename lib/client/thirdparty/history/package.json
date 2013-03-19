@@ -1,0 +1,17 @@
+{
+
+	"type": "module",
+	"name":"history",
+	"version":"1.0",
+	"description":"History.js (v1.7.1 - October 4 2011)",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+		{"path":"history.adapter.jquery.js"},
+		{"path":"history.html4.js"},
+		{"path":"history.js"}
+	]
+
+}

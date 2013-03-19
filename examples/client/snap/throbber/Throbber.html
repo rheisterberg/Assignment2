@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Throbber</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Throbber</h2>
+
+<div id="Target" style="position:relative; height:200px; width:400px; margin:20px; border:1px solid blue"></div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    snap.require('snap.console.Console');
+
+    var Button = snap.require('snap.button.Button');
+    var Throbber = snap.require('snap.throbber.Throbber');
+
+    var throbber = new Throbber({
+        target:'Target'
+    });
+
+    var show = new Button({
+        text:'Show Throbber',
+        styles:{elem:{margin:'20px','text-align':'center'}},
+        classes:{elem:'med blue'},
+        target:document.body
+    });
+
+    show.subscribe('click',function() {
+        throbber.show();
+    });
+
+});
+
+</script>
+</body>
+</html>

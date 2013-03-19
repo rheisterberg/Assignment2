@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Panel Layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    snap.require('snap.console.Console');
+
+    var group = 'Group.gif';
+    var person = 'Person.gif';
+
+    var Container = snap.require('snap.Container');
+    var ToolButton = snap.require('snap.toolbar.ToolButton');
+
+    var Panel = snap.require('snap.panel.Panel');
+
+    var buttons = new Container({
+        styles:{elem:{padding:'10px'}},
+        children:[
+            new ToolButton({cid:'Button1',icon:person,text:'Button 1',classes:{elem:'tbtn lrg blu rt'}}),
+            new ToolButton({cid:'Button2',icon:person,text:'Button 2',classes:{elem:'tbtn lrg blu rt'}}),
+            new ToolButton({cid:'Button3',icon:person,text:'Button 3',classes:{elem:'tbtn lrg blu rt'}}),
+            new ToolButton({cid:'Button4',icon:person,text:'Button 4',classes:{elem:'tbtn lrg blu rt'}})
+        ],
+        autosize:true,
+        manager:'snap.vertical.VerticalLayout'
+    });
+
+    for (var idx = 0;(idx < buttons.children.length);idx++) {
+        var button = buttons.children[idx];
+        button.subscribe('click',function(message) {
+            var button = message.source;
+            buttons.removeChild(button);
+        });
+
+    }
+
+    var panel = new Panel({
+        title:'Panel Layout',
+        children:[buttons],
+        styles:{elem:{border:'1px solid #ccc'},body:{height:'400px'}},
+        target:'#Panel',
+        expandable:true,
+        closable:'left',
+        autosize:true
+    });
+
+});
+</script>
+</head>
+<body>
+<div id="Panel" style="position:relative;top:100px;left:100px;width:210px;overflow:hidden"></div>
+</body>
+</html>

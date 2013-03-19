@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Finger Tabs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<script type=text/javascript src="../../Snap.js"></script>
+
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<h2>Finger Tabs</h2>
+
+<h3>Finger Tabs</h3>
+<div id="Fingers"></div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var Panel = snap.require('snap.panel.Panel');
+	
+	var FingerTab = snap.require('snap.fingers.FingerTab');
+	var FingerTabs = snap.require('snap.fingers.FingerTabs');
+
+	var styles = {elem:{width:'300px',height:'200px','text-align':'center'}};
+	
+	var fingers = new FingerTabs({
+		styles:{elem:{margin:'10px',width:'210px','max-height':'190px',border:'1px solid #ccc'}},
+		children:[
+			new FingerTab({title:'Finger Tab 0',children:[new Panel({styles:styles,content:'Content 0'})],finger:true}),
+			new FingerTab({title:'Finger Tab 1 aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa',children:[new Panel({styles:styles,content:'Content 1'})],finger:true}),
+			new FingerTab({title:'Finger Tab 2',children:[new Panel({styles:styles,content:'Content 2'})],finger:false}),
+			new FingerTab({title:'Finger Tab 3',children:[new Panel({styles:styles,content:'Content 3'})],finger:true}),
+			new FingerTab({title:'Finger Tab 4',children:[new Panel({styles:styles,content:'Content 4'})],finger:true}),
+			new FingerTab({title:'Finger Tab 5',children:[new Panel({styles:styles,content:'Content 5'})],finger:true}),
+			new FingerTab({title:'Finger Tab 6',children:[new Panel({styles:styles,content:'Content 6'})],finger:true}),
+			new FingerTab({title:'Finger Tab 7',children:[new Panel({styles:styles,content:'Content 7'})],finger:true}),
+			new FingerTab({title:'Finger Tab 8',children:[new Panel({styles:styles,content:'Content 8'})],finger:true}),
+			new FingerTab({title:'Finger Tab 9',children:[new Panel({styles:styles,content:'Content 9'})],finger:true}),
+			new FingerTab({title:'Finger Tab 10',children:[new Panel({styles:styles,content:'Content 10'})],finger:true}),
+			new FingerTab({title:'Finger Tab 11',children:[new Panel({styles:styles,content:'Content 11'})],finger:true}),
+			new FingerTab({title:'Finger Tab 12',children:[new Panel({styles:styles,content:'Content 12'})],finger:true}),
+			new FingerTab({title:'Finger Tab 13',children:[new Panel({styles:styles,content:'Content 13'})],finger:true}),
+			new FingerTab({title:'Finger Tab 14',children:[new Panel({styles:styles,content:'Content 14'})],finger:true}),
+			new FingerTab({title:'Finger Tab 15',children:[new Panel({styles:styles,content:'Content 15'})],finger:true}),
+			new FingerTab({title:'Finger Tab 16',children:[new Panel({styles:styles,content:'Content 16'})],finger:true}),
+			new FingerTab({title:'Finger Tab 17',children:[new Panel({styles:styles,content:'Content 17'})],finger:true}),
+			new FingerTab({title:'Finger Tab 18',children:[new Panel({styles:styles,content:'Content 18'})],finger:true}),
+			new FingerTab({title:'Finger Tab 19',children:[new Panel({styles:styles,content:'Content 19'})],finger:true})
+		],
+		target:'#Fingers'
+	});
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{?header}<header id="Header"></header>{/header}
+<section id="Body">
+	{?top}<section id="Top"></section>{/top}
+	{?left}<section id="Left"></section>{/left}
+	{?right}<section id="Right"></section>{/right}
+	{?center}<section id="Center"></section>{/center}
+	{?bottom}<section id="Bottom"></section>{/bottom}
+</section>
+{?footer}<footer id="Footer"></footer>{/footer}

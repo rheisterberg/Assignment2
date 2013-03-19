@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tetris</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body style="height:2000px">
+
+<h2>Tetris</h2>
+
+<h3>Tetris Layout</h3>
+<div id="Tetris" style="display:inline-block"></div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var Panel = snap.require('snap.panel.Panel');
+	var Container = snap.require('snap.Container');
+
+	var tetris = new Container({
+		cols:3,
+		manager:'snap.tetris.TetrisLayout',
+		styles:{elem:{position:'relative',margin:'10px','max-height':'800px',overflow:'hidden',margin:'10px',border:'1px solid #ccc'}},
+		children:[
+			new Panel({styles:{elem:{height:'20px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 0'}),
+			new Panel({styles:{elem:{height:'20px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 1'}),
+			new Panel({styles:{elem:{height:'100px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 2'}),
+			new Panel({styles:{elem:{height:'150px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 3'}),
+			new Panel({styles:{elem:{height:'40px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 4'}),
+			new Panel({styles:{elem:{height:'50px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 5'}),
+			new Panel({styles:{elem:{height:'60px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 6'}),
+			new Panel({styles:{elem:{height:'70px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 7'}),
+			new Panel({styles:{elem:{height:'80px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 8'}),
+			new Panel({styles:{elem:{height:'90px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 9'}),
+			new Panel({styles:{elem:{height:'100px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 10'}),
+			new Panel({styles:{elem:{height:'30px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 11'}),
+			new Panel({styles:{elem:{height:'40px',margin:'10px',border:'1px solid #ccc','text-align':'center'}},content:'Content 12'})
+		],
+		target:'#Tetris'
+	});
+
+	//new VerticalScroller({scrollable:tetris,target:tetris.elem});
+
+});
+</script>
+</body>
+</html>

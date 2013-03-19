@@ -1,0 +1,23 @@
+{
+
+	"type": "module",
+	"name":"snap.scrollbar.vertical",
+	"version":"1.0",
+	"description":"Dust Vertical Scrollbar",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"VerticalScrollbar.css"},
+
+		{"path":"VerticalScrollbar.js"},
+		{"path":"VerticalScrollbar.dust.js"},
+		{"path":"VerticalScrollbar.rhtml"},
+
+		{"path":"VerticalScroller.js"}
+
+	]
+
+}

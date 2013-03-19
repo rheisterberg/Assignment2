@@ -1,0 +1,5 @@
+<div id="{eid}" class="pager">
+	{#prev}<a class="prev{#disabled} disabled{/disabled}" href="{href}">&lt;</a>{/prev}
+	{#links}<a class="page{#selected} selected{/selected}" href="{href}">{page}</a>{/links}
+	{#next}<a class="next{#disabled} disabled{/disabled}" href="{href}">&gt;</a>{/next}
+</div>

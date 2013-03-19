@@ -1,0 +1,45 @@
+{
+
+    "type": "module",
+    "name":"snap.dust",
+    "version":"1.0",
+    "description":"Dust component core",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"module":"jquery"},
+        {"module":"linkedin"},
+        {"module":"templating"},
+
+        {"path":"Reset.css"},
+        {"path":"Global.css"},
+
+        {"path":"Registry.js"},
+        {"path":"Observable.js"},
+        {"path":"Messaging.js"},
+        {"path":"Layout.js"},
+
+        {"path":"Draggable.js"},
+        {"path":"Droppable.js"},
+
+        {"path":"Component.js"},
+
+        {"path":"Component.dust.js"},
+        {"path":"Component.rhtml"},
+
+        {"path":"Container.js"},
+
+        {"path":"Container.dust.js"},
+        {"path":"Container.rhtml"},
+
+        {"path":"Content.js"},
+        {"path":"Context.js"},
+
+        {"path":"Templates.js"}
+
+    ]
+
+}

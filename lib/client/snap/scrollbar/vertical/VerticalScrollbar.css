@@ -1,0 +1,8 @@
+
+.scroll-y {position:relative; overflow:hidden}
+
+.scroll-y-bar {position:absolute; z-index:1; width:8px; background-color:#eee; cursor:pointer}
+.scroll-y-bar .scroll-y-hdl {position:absolute; width:8px; height:20px; background-color:#ccc; border-radius:3px; cursor:pointer}
+
+.scroll-y-bar .scroll-y-hdl:hover {background-color:#999}
+.scroll-y-bar .scroll-y-hdl.drag {background-color:#666}

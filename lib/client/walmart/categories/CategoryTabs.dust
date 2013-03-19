@@ -1,0 +1,9 @@
+<div id="{eid}" class="cat">
+<div class="cat-l"{#back} style="visibility:visible"{/back}><a class="cat-l-a" href="{back}">&lt; {backtext}</a></div>
+<div class="cat-h"><span id="Category">{title}</span></div>
+<div class="cat-t">
+	<div class="cat-t-b shdw">{#widgets:children/}</div>
+	<div class="cat-t-h">{#children}<div class="cat-t-t" tid="{tid}"><a class="cat-t-a" href="{url}">{name}</a></div>{/children}</div>
+</div>
+<div class="cat-b"></div>
+</div>

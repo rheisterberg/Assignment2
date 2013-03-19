@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Border Layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body class="sz1200" style="margin:0px">
+<div style="display:none">
+<div id="head">This content is added dynamically</div>
+</div>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	var Tree = snap.require('snap.tree.Tree');
+	var Node = snap.require('snap.tree.TreeNode');
+
+	var Component = snap.require('snap.Component');
+	var Container = snap.require('snap.Container');
+
+	var root1 = new Node({
+		icon:'Books.gif',
+		text:'Tree Root 1 asdfasfa sadff asfsdf aasdfa asfd asdf asdf adsf adf af ',
+		children:[
+			new Node({icon:'Book.gif',text:"Node 1"}),
+			new Node({icon:'Book.gif',text:"Node 2 asdf asdf asdf sadf asdf asdf asdf f"}),
+			new Node({icon:'Book.gif',text:"Node 3"}),
+			new Node({icon:'Book.gif',text:"Node 4"}),
+			new Node({icon:'Book.gif',text:"Node 5"})
+		]
+	});
+
+	var root2 = new Node({
+		icon:'Books.gif',
+		text:'Tree Root 2 asdfasfa sadff asfsdf aasdfa asfd asdf asdf adsf adf af ',
+		children:[
+			new Node({icon:'Book.gif',text:"Node 1"}),
+			new Node({icon:'Book.gif',text:"Node 2"}),
+			new Node({icon:'Book.gif',text:"Node 3"}),
+			new Node({icon:'Book.gif',text:"Node 4"}),
+			new Node({icon:'Book.gif',text:"Node 5"})
+		]
+	});
+
+	var Panel = snap.require('snap.panel.Panel');
+
+	var tree = new Panel({
+		region:'left',
+		styles:{elem:{width:250}},
+		title:'Tree Layout',
+		manager:'snap.tree.TreeLayout',
+		children:[root1,root2],
+		closable:'left',
+		expandable:false,
+		resizable:true,
+		autosize:true
+	});
+
+	var group = 'Group.gif';
+	var person = 'Person.gif';
+
+	var ToolButton = snap.require('snap.toolbar.ToolButton');
+
+	var buttons = new Container({
+		styles:{elem:{padding:'10px'}},
+		children:[
+			new ToolButton({cid:'Button1',icon:person,text:'Button 1',classes:{elem:'tbtn lrg blu rt'}}),
+			new ToolButton({cid:'Button2',icon:person,text:'Button 2',classes:{elem:'tbtn lrg blu rt'}}),
+			new ToolButton({cid:'Button3',icon:person,text:'Button 3',classes:{elem:'tbtn lrg blu rt'}}),
+			new ToolButton({cid:'Button4',icon:person,text:'Button 4',classes:{elem:'tbtn lrg blu rt'}})
+		],
+		autosize:true,
+		manager:'snap.vertical.VerticalLayout'
+	});
+
+	for (var idx = 0;(idx < buttons.children.length);idx++) {
+		var button = buttons.children[idx];
+		button.subscribe('click',function(message) {
+			var button = message.source;
+			buttons.removeChild(button);
+			button.elem.remove();
+		});
+
+	}
+
+	var item1 = new Panel({
+		title:'Buttons',
+		children:[buttons],
+		styles:{elem:{'text-align':'center'}}
+	});
+
+	var item2 = new Panel({
+		title:'Constraints',
+		content:'&lt;empty panel&gt;',
+		styles:{elem:{'text-align':'center'}}
+	});
+
+	var item3 = new Panel({
+		title:'Aspects',
+		content:'&lt;empty panel&gt;',
+		styles:{elem:{'text-align':'center'}}
+	});
+
+	var item4 = new Panel({
+		title:'Preferences',
+		content:'&lt;empty panel&gt;',
+		styles:{elem:{'text-align':'center'}}
+	});
+
+	var accordion = new Panel({
+		region:'right',
+		styles:{elem:{width:250}},
+		title:'Accordion Layout',
+		manager:'snap.accordion.AccordionLayout',
+		children:[item1,item2,item3,item4],
+		closable:'right',
+		expandable:false,
+		resizable:true,
+		autosize:true
+	});
+
+	var Tab = snap.require('snap.tabs.Tab');
+	var Tabs = snap.require('snap.tabs.Tabs');
+
+	var tab1 = new Tab({
+		title:'All Items',
+		content:'&lt;tab 1 content &gt;',
+		styles:{body:{'text-align':'center'}}
+	});
+
+	var tab2 = new Tab({
+		title:'Auction Only',
+		content:'&lt;tab 2 content &gt;',
+		styles:{body:{'text-align':'center'}}
+	});
+
+	var tab3 = new Tab({
+		title:'Buy It Now',
+		content:'&lt;tab 3 content &gt;',
+		styles:{body:{'text-align':'center'}},
+		closable:true
+	});
+
+	var tabs = new Tabs({
+		region:'center',
+		styles:{elem:{'padding-top':5}},
+		children:[tab1,tab2,tab3],
+		autosize:true
+	});
+
+	var regions = [
+
+		new Panel({region:'head',content:snap.elem("head"),styles:{elem:{height:100,'text-align':'center'}},resizable:true}),
+		new Panel({region:'foot',content:'&lt;foot panel&gt;',styles:{elem:{height:100,'text-align':'center'}},resizable:true}),
+
+		tree,accordion,tabs
+
+		];
+
+	snap.require('snap.console.Console');
+
+	snap.render('snap.page.Page',{children:regions,manager:'snap.border.BorderLayout'});
+
+});
+
+</script>
+</body>
+</html>

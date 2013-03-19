@@ -1,0 +1,7 @@
+{
+
+    "name" : "com.walmart.top",
+    "main" : "./top.js",
+
+    "template" : "./top.dust"
+}

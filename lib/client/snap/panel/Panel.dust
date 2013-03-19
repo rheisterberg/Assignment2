@@ -1,0 +1,1 @@
+<div id="{eid}" class="pnl">{?title}<div class="pnl-h"><div class="pnl-t">{title}</div></div><div class="pnl-b">{#widgets:children/}</div>{/title}</div>

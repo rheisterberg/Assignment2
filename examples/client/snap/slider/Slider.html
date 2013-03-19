@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slider</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Slider</h2>
+
+<h3>Range</h3>
+<div id="Range"></div>
+
+<h3>Logarithmic</h3>
+<div id="Logarithmic"></div>
+
+<h3>Currency</h3>
+<div id="Currency"></div>
+
+<h3>Enumeration</h3>
+<div id="Ticks"></div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    snap.require('snap.console.Console').show();
+
+    var styles = {elem:{margin:'10px',width:'200px',border:'1px solid #ccc'}};
+
+    var SliderRange = snap.require('snap.slider.range.SliderRange');
+
+    var range = new SliderRange({
+        styles:styles,
+        min:0,max:1000,low:200,high:800,disabled:false,
+        target:'#Range'
+    });
+
+    var SliderLogarithmic = snap.require('snap.slider.logarithmic.SliderLogarithmic');
+
+    var logarithmic = new SliderLogarithmic({
+        styles:styles,
+        min:1,max:20000,
+        target:'#Logarithmic'
+    });
+
+    var CurrencyFormatter = snap.require('ebay.utils.CurrencyFormatter');
+    var SliderCurrency = snap.require('snap.slider.currency.SliderCurrency');
+
+    var currency = new SliderCurrency({
+        styles:styles,
+        formatter:new CurrencyFormatter({grouping:',',symbol:'$',pattern:'Sn'}),
+        min:5,max:10108,low:20,high:5000,
+        target:'#Currency'
+    });
+
+    var SliderEnumeration = snap.require('snap.slider.enumeration.SliderEnumeration');
+
+    var enumeration = new SliderEnumeration({
+        styles:styles,index:1,
+        values:['Local','on eBay.com','US Only','North America','Worldwide'],
+        target:'#Ticks'
+    });
+
+});
+</script>
+</body>
+</html>

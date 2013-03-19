@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snap Client Framework</title>
+
+<link type="text/css" href="Index.css" rel="stylesheet" />
+
+<link type="text/css" href="../../examples/client/Snap.css" rel="stylesheet" />
+<script type=text/javascript src="../../examples/client/Snap.js"></script>
+
+<link type="text/css" href="../../examples/client/Walmart.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console').show();
+	
+    var Tab = snap.require('snap.tabs.Tab');
+    var Tabs = snap.require('snap.tabs.Tabs');
+
+    var Page = snap.require('snap.page.Page');
+    var Panel = snap.require('snap.panel.Panel');
+
+    var TreeLoader = snap.require('snap.tree.TreeLoader');
+
+	var iframe = $('<iframe width="0" height="0"/>').css('display','none');
+	var tabIcon = 'Ebay.gif';
+
+	function onTabLoad(node,event) {
+
+		var tab = new Tab({cid:node.text,icon:tabIcon,title:node.text,closable:true});
+		tab.elem.html(iframe[0].contentWindow.document.body.innerHTML);
+
+		tabs.appendChild(tab);
+		tabs.publish('select',tab);
+
+		iframe.remove();
+		
+	}
+
+	function onTreeLoad(event,tree) {
+
+		accordion.appendChild(tree);
+
+		tree.subscribe("click",onTreeClick,this);
+		tree.publish("click",{text:'Overview',href:'../Overview/Overview.html'});
+
+	}
+
+	function onTreeClick(event,node) {
+
+		var tab = tabs.getTab(node.text);
+		if (tab) {tabs.publish('select',tab); return false; }
+		else if (node.href == null) return false;
+						
+		snap.log("debug","Loading tab",node.href,"...");
+
+		iframe.appendTo(document.body);
+		iframe.bind('load',onTabLoad.bind(this,node));
+		iframe.attr('src',node.href);
+
+		return false;
+
+	}
+
+	var accordion = new Panel({
+		title:'Contents',
+		region:'left',
+		styles:{elem:{width:250}},
+		children:[],
+		closable:'left',
+		expandable:false,
+		resizable:true,
+		autosize:true
+	});
+
+	var tabs = new Tabs({
+		region:'center',
+		styles:{elem:{'padding-top':'5px'}},
+		children:[],
+		autosize:true
+	});
+
+	var loader = new TreeLoader({});
+	loader.subscribe("complete",onTreeLoad,this);
+	loader.load('Index.xml',true);
+
+	var regions = [
+
+		new Panel({region:'head',content:$('#head'),styles:{elem:{height:100}}}),
+		
+		accordion,tabs
+		
+		];
+
+	new Page({children:regions,manager:'snap.border.BorderLayout'});
+
+});
+
+</script>
+<div style="display:none">
+<table id="head">
+<tbody><tr>
+<td><img src="Spark.png"></td>
+<td><h1 style="padding-left:20px">Snap Framework</h1></td>
+</tr></tbody>
+</table>
+</div>
+</body>
+</html>

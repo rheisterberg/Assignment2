@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anchor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Anchor</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    snap.require('snap.console.Console');
+
+    function onAnchorClick(message) {
+        snap.log('debug','onAnchorClick',message.source.href);
+        //message.type.test.a;
+        //return false;
+    }
+
+    var Anchor = snap.require('snap.anchor.Anchor');
+    var anchor = new Anchor({
+        text:'Click here',
+        href:'http://www.ebay.com/sch/i.html?_nkw=nike',
+        styles:{elem:{margin:'20px',padding:'20px'}},
+        target:document.body
+    });
+
+    anchor.subscribe("click",onAnchorClick,this);
+
+});
+
+</script>
+</body>
+</html>

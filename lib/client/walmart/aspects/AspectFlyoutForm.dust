@@ -1,0 +1,22 @@
+<form id={eid} class="asf-f">
+	<table class="asf-t">
+		<tbody>
+			<tr>
+				<td class="options" rowspan="2">
+					<div class="title">{#content path="srp_snap/Aspects.MoreRefinementsTitle"/}</div>
+					<div class="others"></div>
+				</td>
+				<td class="shadow" rowspan="2"></td>
+				<td class="frame">
+					<div class="asp-e make-selection"><b class="sprIconStatusMsg"/>{#content path="srp_snap/Aspects.MakeSelection"/}</div>
+					<div class="asp-e system-error"><b class="sprIconStatusMsg"/>{#content path="srp_snap/Aspects.SystemFailure"/}</div>
+					<div class="frame"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="controls"></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="asf-c" tabindex="0"/>
+</form>

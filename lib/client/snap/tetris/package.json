@@ -1,0 +1,21 @@
+{
+
+	"type": "module",
+	"name":"snap.tetris",
+	"version":"1.0",
+	"description":"Dust TetrisLayout",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"TetrisLayout.css"},
+
+		{"path":"TetrisLayout.js"},
+		{"path":"TetrisLayout.dust.js"},
+		{"path":"TetrisLayout.rhtml"}
+
+	]
+
+}

@@ -1,0 +1,9 @@
+
+.progress {position:relative; padding:10px 15px}
+
+.progress .lbl {position:relative; color:#999; font-weight:bold; font-size:11px; text-align:center}
+
+.progress .rng {position:relative; height:9px; padding:8px 0px; background:transparent url(data:image/gif;base64,R0lGODdhBgAJAPEAANLS0rm5ud7e3gAAACH/C1hNUCBEYXRhWE1QAT8ALAAAAAAGAAkAAAILjA+pwu0PI1PqnAIAOw==) repeat-x 0 center}
+.progress .rng .bar {position:relative; height:9px; background:transparent url(data:image/gif;base64,R0lGODdhBgAJAPMIAB5qyxE6pxtewiR+2g4yoBdSuCF20yaF3xRGrwAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QAT8ALAAAAAAGAAkAQAQU8MhJqhU4m82R/0MoAmRZnGigrhEAOw==) repeat-x}
+
+

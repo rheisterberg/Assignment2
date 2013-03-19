@@ -1,0 +1,43 @@
+.afl {position:absolute; display:none; background-color:#fff; border:1px solid #ccc}
+.afl {font-family:Arial, Helvetica, sans-serif; font-size: 15px; }
+.afl .afe .keys { font-weight:bold; color: #000;}
+.afl .afe .keys.nobold { font-weight:normal;}
+
+.afl .afe i {font-weight:normal; font-style:normal;}
+.afl .afe td {vertical-align:middle}
+.afl .afe.hl {background-color:#e0edff}
+.afl .afe.hl td {background-color:#e0edff}
+
+.afl .sugg {position:relative; padding:4px}
+.afl .sugg div.afe {position:relative; padding:2px 0px; cursor:pointer; line-height:16px}
+.afl .sugg div.afe .cat b {color: #999; font-weight: normal;}
+
+.afl .related { position: relative; margin-top: 5px; padding-left: 4px; }
+.afl .related .titl { border-top:1px solid #e7e7e7; text-align:center; }
+.afl .related .titl span { color:#999; background-color:#fff; top:-7px; }
+.afl .related a { color: #000; line-height:1.25em;}
+
+.afl .prod {position:relative; margin-top:5px; padding:0px 4px; font-family:Arial;}
+.afl .prod .titl {position:relative; border-top:1px solid #e7e7e7; text-align:center;}
+.afl .prod .titl span {position:relative; color:#999; background-color:#fff; top:-7px}
+.afl .prod .body {position:relative; text-align:left}
+.afl .prod .body td {padding:5px; cursor:pointer}
+.afl .prod .body td.img {width:32px; text-align:center; vertical-align:middle; overflow:hidden}
+.afl .prod .body td.img img.img {width:32px}
+
+.afl .logo {position:relative; padding:2px 4px; border-top:1px solid #e7e7e7}
+.afl .logo table {position:relative}
+.afl .logo td {padding:5px; cursor:pointer}
+.afl .logo td a {display:block; overflow:hidden}
+.afl .logo td img {border:none}
+.afl .none {padding:4px; display:none}
+.afl .foot {padding:4px; border-top:1px solid #e7e7e7; text-align:right;}
+.afl .foot a { color: #000; }
+
+.afl .show { }
+.afl .show { /*background:url(${res.img.pics.icons.iconAutofillUp_12x10_gif}) no-repeat center right;*/}
+
+.afl .show:hover {text-decoration:underline}
+
+
+

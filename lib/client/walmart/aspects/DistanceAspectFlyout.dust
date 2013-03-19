@@ -1,0 +1,10 @@
+<div id="{eid}" class="distance">
+	<div class="asp-e LH_Distance"><b class="sprIconStatusMsg"/>{#content path="srp_snap/Aspects.EnterValidZipCode"/}</div>
+	<div class="cbx{#disabled} d{/disabled}">
+		<input type="checkbox" name="{name}" value="2" class="cbx" />
+		<a class="cbx">
+			<input type="hidden" name="_fspt" value="1">
+			{#content path="srp_snap/DistanceAspect.WithinRadius" context="within"/}
+		</a>
+	</div>
+</div>

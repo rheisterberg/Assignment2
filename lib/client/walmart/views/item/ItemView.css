@@ -1,0 +1,7 @@
+
+.iv {position:relative; border:1px solid #ccc}
+
+.iv table.details {width:100%}
+
+.iv table.details td.lbl{padding:5px; font-weight:bold}
+.iv table.details td.val{padding:5px; font-weight:normal}

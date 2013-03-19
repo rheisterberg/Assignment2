@@ -1,0 +1,19 @@
+{
+
+	"type": "module",
+	"name":"snap.slider.enumeration",
+	"version":"1.0",
+	"description":"Dust Slider",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"module":"snap.slider"},
+		
+		{"path":"SliderEnumeration.js"}
+
+	]
+
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tab Layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Tabs Layout</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    //snap.require('snap.console.Console');
+
+    var styles = {elem:{margin:'10px','text-align':'center'}};
+
+    var Tab = snap.require('snap.tabs.Tab');
+    var Tabs = snap.require('snap.tabs.Tabs');
+
+    var Button = snap.require('snap.button.Button');
+
+    var tab1 = new Tab({
+            title:'Tab 1',
+            styles:styles,
+            content:'&lt;tab 1 content &gt;',
+            closable:false
+    });
+
+    var tab2 = new Tab({
+            title:'Tab 2',
+            styles:styles,
+            content:'&lt;tab 2 content &gt;',
+            selected:true,
+            closable:false
+    });
+
+    var tab3 = new Tab({
+            title:'Tab 3',
+            styles:styles,
+            content:'&lt;tab 3 content &gt;',
+            closable:true
+    });
+
+    var tabs = new Tabs({
+            autosize:true,
+            styles:{elem:{width:'500px',height:'300px',margin:'10px 20px',padding:'10px',border:'1px solid #ccc'}},
+            children:[tab1,tab2,tab3],
+            target:document.body
+    });
+
+    function onButtonClick(event,object) {
+
+        var tdx = tabs.children.length + 1,title = 'Tab '.concat(tdx),content = '&lt;tab '.concat(tdx,' content &gt;');
+        var tab = new Tab({title:title,styles:styles,content:content,closable:true});
+
+        tabs.appendChild(tab);
+        tabs.publish('select',tab);
+
+        return false;
+
+    }
+
+    var button1 = new Button({
+        text:'Add New Tab',
+        classes:{elem:'sml blue'},
+        styles:{elem:{margin:'20px 10px','text-align':'center'}},
+        target:document.body
+    });
+
+    button1.subscribe("click",onButtonClick);
+
+});
+</script>
+</body>
+</html>

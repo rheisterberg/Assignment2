@@ -1,0 +1,23 @@
+{
+
+    "type": "module",
+    "name":"snap.bubble",
+    "version":"1.0",
+    "description":"Dust Bubble",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"module":"snap.window"},
+
+        {"path":"Bubble.css"},
+
+        {"path":"Bubble.js"},
+        {"path":"Bubble.dust.js"},
+        {"path":"Bubble.rhtml"}
+
+    ]
+
+}

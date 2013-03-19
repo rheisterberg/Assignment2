@@ -1,0 +1,12 @@
+
+.cv {position:relative}
+
+.cv .ci{position:relative; padding:10px 10px}
+.cv .ci-b {position:relative; padding:10px 10px; border:1px solid #ccc; text-align:center}
+
+.cv .ci-c {position:absolute; width:7px; height:8px; top:5px; right:5px; background:transparent right top no-repeat; cursor:pointer}
+.cv .ci-c {background-image:url(data:image/gif;base64,R0lGODlhBwAIALMNAGyP0Iml2f39/k95xlB6x2uOz4qm2RNLs4Kg1y1fu+nu+Kq+5AA9rf///wAAAAAAACH5BAEAAA0ALAAAAAAHAAgAAAQhsKBGUTFstcVMI8dyEJSSMIlSnmkjDOExCEG2MQEwVUAEADs=)}
+
+.cv .ci-i {position:relative; pointer:cursor}
+
+

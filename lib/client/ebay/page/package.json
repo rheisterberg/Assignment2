@@ -1,0 +1,16 @@
+{
+	"type": "module",
+	"name":"ebay.page",
+	"version":"1.0",
+	"description":"eBay Page Css",
+	"homepage":"http://wiki2.arch.ebay.com/display/RAPTOR/Home",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@ebay.com"}
+	],
+
+	"includes":[
+	    {"path":"Reset.css"},
+	    {"path":"Global.css"}
+	]
+	
+}

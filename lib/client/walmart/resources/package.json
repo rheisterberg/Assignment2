@@ -1,0 +1,14 @@
+{
+	"type": "module",
+	"name":"walmart.context",
+	"version":"1.0",
+	"description":"eBay Client Resources",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+	    {"path":"Resources.js"}
+	]
+	
+}

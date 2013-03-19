@@ -1,0 +1,18 @@
+<table id={eid} class="details">
+	<tbody>
+	<tr><td colspan="2" style="padding:10px; text-align:right"><img class="iv-c" src="http://pics.ebaystatic.com/aw/pics/cmp/ds2/iconClose.png"></td></tr>
+	<tr><td colspan="2" style="padding:10px; text-align:center">
+		{?hasImage}<a class="img" href="{viewItemURL}"><img alt="Item image" class="{getImageClass}" src="{getImageSrc}"></a>{:else}No Photo{/hasImage}
+	</td></tr>
+	<tr><td class="lbl">Title</td><td class="val">{title}</td></tr>
+	<tr><td class="lbl">Subtitle</td><td class="val">{subtitle}</td></tr>
+	<tr><td class="lbl">Category</td><td class="val">{category}</td></tr>
+	<tr><td class="lbl">Bid Price</td><td class="val">{bidprice}</td></tr>
+	<tr><td class="lbl">Bin Price</td><td class="val">{binprice}</td></tr>
+	<tr><td class="lbl">Condition</td><td class="val">{condition}</td></tr>
+	<tr><td class="lbl">Payment Method</td><td class="val">{paymentMethod}</td></tr>
+	<tr><td class="lbl">Location</td><td class="val">{location}</td></tr>
+	<tr><td class="lbl">Country</td><td class="val">{country}</td></tr>
+	</tr>
+	</tbody>
+</table>

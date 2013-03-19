@@ -1,0 +1,5 @@
+<div id="{eid}" class="price">
+	<input type="checkbox" class="radio" value="1" name="_mPrRngCbx">
+	<div class="asp-e enter-price hdn"><b class="sprIconStatusMsg"/>Please enter a minimum and/or maximum price before continuing.</div>
+	Show items priced from $ <label for="{udloid}" class="hdn">Enter minimum price</label><input id="{udloid}" type="text" value="" name="_udlo" maxlength="13" size="6" class="price"> to $ <label for="{udhiid}" class="hdn">Enter maximum price</label><input id="{udhiid}" type="text" value="" name="_udhi" maxlength="13" size="6" class="price">
+</div>

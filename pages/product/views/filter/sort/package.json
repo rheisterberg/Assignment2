@@ -1,0 +1,12 @@
+{
+
+    "name" : "com.walmart.product.filter.sort",
+    "main" : "./sort.js",
+
+    "template" : "../filter.dust",
+
+    "requires" : [
+        "../filter"
+    ]
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toolbar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Toolbar Layout</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var group = 'Group.gif';
+	var person = 'Person.gif';
+
+	var arrow = 'ArrowDownEnabled.gif';
+
+    var Container = snap.require('snap.Container');
+
+    var ToolBar = snap.require('snap.toolbar.Toolbar');
+    var ToolButton = snap.require('snap.toolbar.ToolButton');
+
+    var Panel = snap.require('snap.panel.Panel');
+
+    var Menu = snap.require('snap.menu.Menu');
+    var Item = snap.require('snap.menu.Item');
+
+	var menu1 = new Menu({
+			styles:{elem:{'background-color':'#eee',border:'1px solid #ccc'}},
+			children:[
+				new Item({icon:person,text:'Person 1'}),
+				new Item({icon:person,text:'Person 2'}),
+				new Item({icon:person,text:'Person 3'})
+			]
+	});
+
+	var menu2 = new Menu({
+			styles:{elem:{'background-color':'#eee',border:'1px solid #ccc'}},
+			children:[
+				new Item({icon:person,text:'Person 1'}),
+				new Item({icon:person,text:'Person 2'}),
+				new Item({icon:person,text:'Person 3'})
+			]
+	});
+
+	var menu3 = new Menu({
+			styles:{elem:{'background-color':'#eee',border:'1px solid #ccc'}},
+			children:[
+				new Item({icon:person,text:'Person 1'}),
+				new Item({icon:person,text:'Person 2'}),
+				new Item({icon:person,text:'Person 3'})
+			]
+	});
+
+	var toolbar = new ToolBar({
+		styles:{elem:{padding:'5px'}},
+		children:[
+
+			new ToolButton({icon:person,classes:{elem:'tbtn med blu'}}),
+			new ToolButton({text:'Medium',classes:{elem:'tbtn med blu'}}),
+
+			new ToolButton({icon:person,text:'Medium',classes:{elem:'tbtn med blu lt'}}),
+			new ToolButton({icon:person,text:'Medium',classes:{elem:'tbtn med blu rt'}}),
+			new ToolButton({icon:person,text:'Medium',classes:{elem:'tbtn med blu top'}}),
+			new ToolButton({icon:person,text:'Medium',classes:{elem:'tbtn med blu bot'}}),
+
+			new ToolButton({icon:person,text:'Options',classes:{elem:'tbtn med blu lt'},arrow:arrow,children:[menu2]})
+
+		]
+	});
+
+	new Panel({
+		title:'Basic Toolbar',
+		styles:{elem:{margin:'20px',width:'800px',border:'1px solid #ccc'}},
+		children:[toolbar],
+		target:document.body
+	});
+
+});
+
+</script>
+</body>
+</html>

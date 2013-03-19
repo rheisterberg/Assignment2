@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eBay Context</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	var User = snap.require('ebay.user.User');
+	
+	var Context = snap.require('ebay.context.Context');
+	var Resources = snap.require('ebay.resources.Resources');
+	var Features = snap.require('snap.client.features.Features');
+	
+	snap.require('snap.console.Console').show();
+	
+	Context.call(Context,{
+		'site':0,
+		'app':'snap',
+		'pool':'dev',
+		'cobrand':0,
+		'locale':'en_US_MAIN',
+		'domain':null,
+		'errors':{'enabled':true},
+		'profiler':{'enabled':true,beacon:'http://sofe'},
+		'pid':3286,
+		'features':{'test':2}
+	});
+
+	Resources.call(Resources,{id:'1',js:'abc',css:'def'});
+
+	snap.log('debug','Context.site',Context.site);
+	snap.log('debug','Context.app',Context.app);
+	
+	snap.log('debug','Resources.resources',JSON.stringify(Resources.tokens));
+
+	snap.log('debug','User.userId',User.getUserId());
+	snap.log('debug','User.signedIn',User.isSignedIn());
+
+});
+
+</script>
+</head>
+<body>
+</body>
+</html>

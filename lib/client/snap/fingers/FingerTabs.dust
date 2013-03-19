@@ -1,0 +1,4 @@
+<div id="{eid}" class="ftabs">
+	<div class="ftabs-b shdw">{#widgets:children/}</div>
+	<div class="ftabs-h">{#children}<div class="ftab-h" eid="{eid}"><a class="ftab-a" href="{href}">{title}</a></div>{/children}</div>
+</div>

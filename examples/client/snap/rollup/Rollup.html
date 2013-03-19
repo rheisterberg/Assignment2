@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rollup Panel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Rollup Panel</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+	
+    var Panel = snap.require('snap.panel.Panel');
+    var Rollup = snap.require('snap.rollup.Rollup');
+    
+	var rollup1 = new Rollup({
+			title:'Rollup 1',
+			styles:{body:{'text-align':'center'}},
+			content:'<div style="height:100px">&lt;empty panel&gt;</div>',
+			expanded:true
+	});
+
+	var rollup2 = new Rollup({
+			title:'Rollup 2',
+			styles:{body:{'text-align':'center'}},
+			content:'<div style="height:100px">&lt;empty panel&gt;</div>'
+	});
+
+	var rollup3 = new Rollup({
+			title:'Rollup 3',
+			styles:{body:{'text-align':'center'}},
+			content:'<div style="height:100px">&lt;empty panel&gt;</div>'
+	});
+
+	var rollup4 = new Rollup({
+			title:'Rollup 4',
+			styles:{body:{'text-align':'center'}},
+			content:'<div style="height:100px">&lt;empty panel&gt;</div>'
+	});
+
+	var rollups = new Panel({
+			title:'Rollups',
+			styles:{elem:{width:'210px',margin:'5px 0px 5px 5px',border:'1px solid #ccc'}},
+			children:[rollup1,rollup2,rollup3,rollup4],
+			target:document.body
+	});
+
+});
+
+</script>
+</body>
+</html>

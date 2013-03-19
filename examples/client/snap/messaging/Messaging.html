@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Messaging</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Messaging</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	var Messaging = snap.require('snap.Messaging');
+	
+	var object = {text:'Global Hello World'};
+
+	snap.require('snap.console.Console').show();
+	
+	snap.subscribe(/.*/,function(message,object) {
+		snap.log('debug','subscribe',message.type,object.text);
+	});
+	
+	snap.log('debug','publish','Global Message 1',object.text);
+	snap.publish('Global Message 1',object,this);
+
+	snap.log('debug','publish','Global Message 2',object.text);
+	snap.publish('Global Message 2',object,this);
+
+	var channel = Messaging.channel('Test');
+	
+	channel.subscribe('Test Message',function(message,object) {
+		snap.log('debug','subscribe',message.type,object.text);
+	});
+	
+	var object = {text:'Test Hello World'};
+	snap.log('debug','publish','Test message',object.text);
+
+	channel.publish(this,'Test Message',object);
+	
+
+});
+
+</script>
+</body>
+</html>

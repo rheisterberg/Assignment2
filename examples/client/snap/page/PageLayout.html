@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PageLayout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+<style type="text/css">
+#Header, #Top, #Left, #Right, #Center, #Bottom, #Footer {border:1px solid blue}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var Container = snap.require('snap.Container');
+	var Panel = snap.require('snap.panel.Panel');
+
+	var regions = [
+
+		new Container({cid:'header',eid:'HeaderPanel',target:'Header'}),
+		new Container({cid:'footer',eid:'FooterPanel',target:'Footer'}),
+
+		new Container({cid:'top',eid:'TopPanel',target:'Top'}),
+		new Container({cid:'bottom',eid:'BottomPanel',target:'Bottom'}),
+
+		new Panel({cid:'left',eid:'LeftPanel',title:'Left Panel',styles:{body:{height:'600px'}},expandable:true,closable:'left',resizable:true,target:'Left'}),
+		new Panel({cid:'right',eid:'RightPanel',title:'Right Panel',styles:{body:{height:'600px'}},expandable:true,closable:'right',resizable:true,target:'Right'}),
+
+		new Container({cid:'center',eid:'CenterPanel',target:'Center'})
+
+	];
+
+	snap.render('snap.page.Page',{children:regions,manager:'snap.page.PageLayout',scroll:true});
+
+	snap.require("snap.scroller.Scroller");
+
+});
+</script>
+</head>
+<body class="sz1200" style="height:4000px">
+<div style="display:none">
+<div id="HeaderPanel" style="height:100px;text-align:center">Header</div>
+<div id="TopPanel" style="height:100px;text-align:center">Top Panel</div>
+<div id="CenterPanel" style="height:800px;text-align:center">Center Panel</div>
+<div id="BottomPanel" style="height:100px;text-align:center">Bottom Panel</div>
+<div id="FooterPanel" style="height:100px;text-align:center">Footer</div>
+</div>
+</body>
+</html>

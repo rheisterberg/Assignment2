@@ -1,0 +1,10 @@
+<div class="upgrd-msg">
+	<h3 class="header">{title}</h3>
+	<div>{message}</div>
+	<div class="upgrd-lnks">
+		<a class="upgrd-lnk firefox" tabindex="-1" href="http://www.mozilla.org/firefox"></a>
+		<a class="upgrd-lnk chrome" tabindex="-1" href="https://www.google.com/chrome"></a>
+		<a class="upgrd-lnk explorer" tabindex="-1" href="http://windows.microsoft.com/ie"></a>
+		<a class="upgrd-lnk safari" tabindex="-1" href="http://www.apple.com/safari"></a>
+	</div>
+</div>

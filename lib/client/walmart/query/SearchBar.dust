@@ -1,0 +1,80 @@
+<div id="{eid}" _sp="p2045573.m1687" class="fsbr">
+		<form action="http://www.d-sjc-00531065.dev.ebay.com:8080/sch/i.html" method="get" name="fsb" id="fsb">
+			<table class="fsbr">
+				<tbody><tr>
+					<td class="keys">
+					    <label for="_fsb_nkw" class="hdn">Enter your search keyword</label>
+						<span class="afi" id="afi">
+							<input type="text" value="nike" autocomplete="off" maxlength="300" placeholder="Enter your search keyword" class="afi" speech="" x-webkit-grammar="builtin:search" x-webkit-speech="" title="Search" name="_nkw" id="_fsb_nkw">
+							<b class="afi" title="Show suggestions" style="display: none;"></b>
+						</span>
+					</td>
+					<td class="cats">
+						<label for="sacat" class="hdn">Select a category for search</label>
+						<select class="cats" name="_sacat" id="sacat">
+							<option value="0">All Categories</option>
+							<optgroup label="----------------------------------------"></optgroup>
+							<option value="20081">Antiques</option>
+									<option value="550">Art</option>
+									<option value="2984">Baby</option>
+									<option value="267">Books</option>
+									<option value="12576">Business &amp; Industrial</option>
+									<option value="625">Cameras &amp; Photo</option>
+									<option value="15032">Cell Phones &amp; PDAs</option>
+									<option value="11450">Clothing, Shoes &amp; Accessories</option>
+									<option value="11116">Coins &amp; Paper Money</option>
+									<option value="1">Collectibles</option>
+									<option value="58058">Computers &amp; Networking</option>
+									<option value="293">Consumer Electronics</option>
+									<option value="14339">Crafts</option>
+									<option value="237">Dolls &amp; Bears</option>
+									<option value="11232">DVDs &amp; Movies</option>
+									<option value="6000">eBay Motors</option>
+									<option value="45100">Entertainment Memorabilia</option>
+									<option value="99">Everything Else</option>
+									<option value="172008">Gift Cards &amp; Coupons</option>
+									<option value="26395">Health &amp; Beauty</option>
+									<option value="11700">Home &amp; Garden</option>
+									<option value="281">Jewelry &amp; Watches</option>
+									<option value="11233">Music</option>
+									<option value="619">Musical Instruments</option>
+									<option value="10159">Partner</option>
+									<option value="1281">Pet Supplies</option>
+									<option value="870">Pottery &amp; Glass</option>
+									<option value="168673">QA Test Books</option>
+									<option value="166299">QA Test Clothing Shoes &amp; Acces</option>
+									<option value="10542">Real Estate</option>
+									<option value="316">Specialty Services</option>
+									<option value="382">Sporting Goods</option>
+									<option value="64482">Sports Mem, Cards &amp; Fan Shop</option>
+									<option value="260">Stamps</option>
+									<option value="1305">Tickets</option>
+									<option value="220">Toys &amp; Hobbies</option>
+									<option value="3252">Travel</option>
+									<option value="1249">Video Games</option>
+									</select>
+					</td>
+					<td class="search">
+						<span class="button  blue enable">
+						<input type="submit" title="" value="Search" class="btn" id="w1-2-button">
+					</span>
+		<span class="sadv">
+							<a href="http://www.d-sjc-00531065.dev.ebay.com:8080/sch/ebayadvsearch?_nkw=nike&amp;rt=nc" id="fsb_advsrh" class="adv-link">Advanced</a>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"></td>
+					<td class="icd">
+					    <input type="checkbox" class="tad" id="titleDesc_id" name="LH_TitleDesc" value="1">
+								<span><label for="titleDesc_id">Include description</label></span>
+					
+						<span class="flds"> 
+						<input type="hidden" id="e1-1" name="_odkw" value="nike">
+							<input type="hidden" id="e1-2" name="_osacat" value="0">
+							</span>
+					</td>
+				</tr>
+			</tbody></table>
+		</form>
+	</div>

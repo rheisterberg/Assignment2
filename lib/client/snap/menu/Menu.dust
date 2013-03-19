@@ -1,0 +1,1 @@
+<ul id="{eid}" class="menu">{#widgets:children/}</ul>

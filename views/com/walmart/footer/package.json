@@ -1,0 +1,7 @@
+{
+
+    "name" : "com.walmart.footer",
+    "main" : "./footer.js",
+
+    "template" : "./footer.dust"
+}

@@ -1,0 +1,22 @@
+{
+    "type": "module",
+    "name":"ebay.user",
+    "version":"1.0",
+    "description":"eBay User",
+    "homepage":"http://wiki2.arch.ebay.com/display/RAPTOR/Home",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@ebay.com"}
+    ],
+
+    "includes":[
+
+        {"module":"ebay.cookies"},
+
+        {"path":"/snap/utils/Utf8.js"},
+        {"path":"/snap/utils/Base64.js"},
+
+        {"path":"User.js"}
+
+    ]
+
+}

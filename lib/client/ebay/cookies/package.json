@@ -1,0 +1,15 @@
+{
+	"type": "module",
+	"name":"ebay.cookies",
+	"version":"1.0",
+	"description":"snap Module:Cookies",
+	"homepage":"http://wiki2.arch.ebay.com/display/RAPTOR/Home",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@ebay.com"}
+	],
+
+	"includes":[
+		{"path":"Cookies.js"}
+	]
+
+}

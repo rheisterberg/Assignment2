@@ -1,0 +1,48 @@
+{
+		"type": "module",
+    "name":"snap.html5",
+    "version":"1.0",
+    "description":"Snap HTML5 Shims",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "extensions":{
+        "snap.html5.tags": {
+            "includes": [
+                {"path":"Html5.js"}
+            ]
+        },
+        "snap.html5.storage": {
+            "includes": [
+                {"path":"Storage.js"}
+            ]
+        },
+        "snap.html5.localStorageIE7": {
+            "includes": [
+                {"path":"LocalStorageIE7.js"}
+            ]
+        },
+        "snap.html5.worker": {
+            "includes": [
+                {"path":"Worker.js"}
+            ]
+        },
+        "snap.html5.autofocus": {
+            "includes": [
+                {"path":"Autofocus.js"}
+            ]
+        },
+        "snap.html5.placeholder": {
+            "includes": [
+                {"path":"Placeholder.js"}
+            ]
+        },
+        "snap.html5.postmessage": {
+            "includes": [
+                {"path":"Postmessage.js"}
+            ]
+        }
+    }
+
+}

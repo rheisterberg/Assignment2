@@ -1,0 +1,8 @@
+{
+
+    "name" : "com.walmart.right",
+    "main" : "./right.js",
+
+    "template" : "./right.dust"
+
+}

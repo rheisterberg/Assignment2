@@ -1,0 +1,82 @@
+
+.asp .pnl {
+	position: relative;
+	margin-bottom:5px;
+	border-bottom:1px solid #ccc;
+}
+
+.asp .pnl .pnl-h {
+	border:0;
+	padding:2px 0px;
+	background-color:transparent;
+	text-align:left;
+}
+
+.asp .pnl-h h3 {
+	margin:0;
+	padding:0;
+	color:#333333;
+	font-size:13px;
+	font-weight:bold;
+	line-height:16px;
+	display:inline;
+	cursor:pointer;
+}
+
+.asp .pnl-h .hdn {
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	outline: medium none;
+	overflow: hidden;
+	position: absolute;
+	width: 0;
+	z-index: -1;
+}
+
+.asp .pnl-h a.more {
+	float:right; margin:2px 5px 0px 5px;
+	color:#999; font-size:13px; text-decoration:none; white-space:nowrap;
+}
+
+.asp .pnl-b {
+	padding-bottom:10px;
+	overflow:hidden;
+}
+
+.asp .pnl-b .tile {
+	float:left; display:inline-block; margin:2px 5px 0px 0px;
+}
+
+.asp .pnl-b a.tile {
+	display:block; width:32px; height:22px; overflow:hidden;
+	background:url("http://pics.ebaystatic.com/aw/pics/buy/csa/images/img_ims_horizon.png?e") no-repeat scroll -200px 0 transparent;
+	font-size:11px; color:#333;
+	line-height:22px;
+	text-align:center;
+	text-decoration:none;
+}
+
+.asp .pnl-b a.tile:hover {
+	background:#eee; color:#1958bd;
+}
+
+.asp .pnl-b.scroll-y {
+	max-height:110px;
+	margin-bottom:10px;
+	padding-bottom:0px;
+}
+
+.asp .refine {
+	position:relative; padding:5px 0px 10px 0px;
+	color:#333; font-weight:bold; font-size:13px;
+	border-bottom:1px solid #ccc;
+}
+
+.asp .refine a {
+	color:#333; text-decoration:none; cursor:pointer;
+}
+
+.asp .refine a:hover {
+	color:#1958bd;
+}

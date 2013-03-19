@@ -1,0 +1,39 @@
+
+.tbtn {position:relative; display:inline-block}
+.tbtn {font-family:tahoma,arial,verdana,sans-serif; font-style:normal; font-weight:bold}
+.tbtn {margin:2px; background:transparent no-repeat; cursor:pointer}
+
+.tbtn.sml {position:relative; padding:1px; font-size:10px}
+.tbtn.med {position:relative; padding:1px; font-size:12px}
+.tbtn.lrg {position:relative; padding:1px; font-size:14px}
+
+.tbtn button {border:0px; cursor:pointer}
+
+.tbtn.blu, .tbtn.blu button {color:#10418C; background-color:#d0def0}
+.tbtn.grn, .tbtn.grn button {color:#10418C; background-color:#a4cdb8}
+.tbtn.gry, .tbtn.gry button {color:#10418C; background-color:#cccccc}
+
+.tbtn.blu {border:1px outset #d0def0}
+.tbtn.grn {border:1px outset #a4cdb8}
+.tbtn.gry {background-color:#cccccc}
+
+.tbtn:hover {border-style:outset}
+.tbtn.down {border-style:inset}
+
+.tbtn.lt button, .tbtn.rt button {text-align:left}
+
+.tbtn.lt img {margin-right:2px}
+.tbtn.rt img {margin-left:2px}
+
+.tbtn.sml img {height:16px}
+.tbtn.med img {height:18px}
+.tbtn.lrg img {height:20px}
+
+.tbtn.top img {display:block; margin:2px auto}
+.tbtn.bot img {display:block; margin:2px auto}
+
+.tbtn .menu {display:none}
+
+.tbtn.sml img.arrow {position:relative; height:4px; padding:0px 2px; margin-bottom:2px}
+.tbtn.med img.arrow {position:relative; height:5px; padding:0px 2px; margin-bottom:4px}
+.tbtn.lrg img.arrow {position:relative; height:6px; padding:0px 2px; margin-bottom:6px}

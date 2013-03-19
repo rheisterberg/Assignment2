@@ -1,0 +1,6 @@
+<div id="{eid}" class="ci">
+	<div class="ci-b">
+		<div class="ci-c"></div>
+		<img class="ci-i" alt="Item image" class="img" src="{galleryURL}" title="{title}">
+	</div>
+</div>

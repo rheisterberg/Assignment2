@@ -1,0 +1,23 @@
+
+div.rbx {
+	position:relative;
+	margin:3px 0 0 20px; padding:0 2px;
+	text-indent:-23px;
+}
+
+div.rbx a.rbx {
+	position:relative; margin:0px 2px;
+	color:#333; text-decoration:none; cursor:pointer;
+}
+
+div.rbx a.rbx:hover {
+	color:#1958bd; cursor:pointer;
+}
+
+div.rbx span.rbx {
+	position:relative; top:2px;
+}
+
+div.rbx.d {
+	cursor:default;
+}

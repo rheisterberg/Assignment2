@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buttons</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+<style type="text/css">
+form .btn {margin:10px}
+</style>
+
+</head>
+<body>
+
+<h2>Buttons</h2>
+
+<form id="form">
+	<span id="i16" class="btn lrg blue"><button type="reset" value="reset">Test</button></span>
+</form>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    snap.require('snap.console.Console').show();
+
+    var Form = snap.require('snap.form.Form');
+    var Button = snap.require('snap.button.Button');
+
+	var button = new Button({eid:'i16',type:'button',classes:{elem:'sml blue'},value:'click',text:'Button with id'});
+
+	var form = new Form({
+		eid:'form',
+		action:'http://www.ebay.com',
+		children:[
+
+			button,
+
+			new Button({cid:"Submit",type:'submit',classes:{elem:'sml blue'},value:'click',text:'Submit'}),
+			new Button({cid:"Cancel",type:'reset',classes:{elem:'sml blue'},value:'reset',text:'Reset'}),
+
+			new Button({type:'button',classes:{elem:'med blue'},value:'click',text:'Button'}),
+			new Button({type:'submit',classes:{elem:'med blue'},value:'click',text:'Submit'}),
+			new Button({type:'reset',classes:{elem:'med blue'},value:'reset',text:'Reset'}),
+
+			new Button({type:'button',classes:{elem:'lrg blue'},value:'click',text:'Button'}),
+			new Button({type:'submit',classes:{elem:'lrg blue'},value:'click',text:'Submit'}),
+			new Button({type:'reset',classes:{elem:'lrg blue'},value:'reset',text:'Reset'})
+
+		],
+		target:document.body
+	});
+
+    var button = snap.render(Button,{type:'button',text:'Cancel'});
+    form.appendChild(button);
+
+    var button = snap.render(Button,{type:'button',text:'Submit'});
+    form.appendChild(button);
+
+    var buttons = [
+        {type:'button',text:'Cancel'},
+        {type:'button',text:'Submit'}
+    ];
+
+    var buttons = snap.render(Button,buttons);
+    for (var idx = 0;(idx < buttons.length);idx++) form.appendChild(buttons[idx]);
+
+	form.subscribe('submit',function(message) {
+		snap.log('debug','onSubmit');
+		return false;
+	});
+
+});
+
+</script>
+</body>
+</html>

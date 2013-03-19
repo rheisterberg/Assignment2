@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{title}</title>
+<link type="text/css" href="/lib/client/snap/Snap.css" rel="stylesheet" />
+<link type="text/css" href="/pages/index/index.css" rel="stylesheet" />
+<script type=text/javascript src="/lib/client/snap/Snap.js"></script>
+<script type=text/javascript src="/pages/index/index.js"></script>
+<style type="text/css">
+#Header, #Top, #Left, #Right, #Center, #Bottom, #Footer {border:1px solid blue}
+</style>
+</head>
+<body class="sz1200">
+<header id="Header">{header|s}</header>
+<section id="Body">
+	<section id="Top">{top|s}</section>
+	<section id="Left">{left|s}</section>
+	<section id="Right">{right|s}</section>
+	<section id="Center">{center|s}</section>
+	<section id="Bottom">{bottom|s}</section>
+</section>
+<footer id="Footer">{footer|s}</footer>
+</body>
+</html>

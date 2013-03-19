@@ -1,0 +1,38 @@
+{
+
+    "type": "module",
+    "name":"walmart.categories",
+    "version":"1.0",
+    "description":"Search CategoryTabs",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"module":"snap.tetris"},
+        {"module":"snap.scrollbar.vertical"},
+
+        {"path":"CategoryFlyout.css"},
+
+        {"path":"CategoryFlyout.js"},
+        {"path":"CategoryPanel.js"},
+
+        {"path":"CategoryTabs.css"},
+
+        {"path":"CategoryTab.js"},
+
+        {"path":"CategoryTab.dust.js"},
+        {"path":"CategoryTab.rhtml"},
+
+        {"path":"CategoryTabs.js"},
+        {"path":"CategoryTabsLayout.js"},
+
+        {"path":"CategoryTabs.dust.js"},
+        {"path":"CategoryTabs.rhtml"},
+
+        {"path":"/srp_snap/Categories.4cc"}
+
+    ]
+
+}

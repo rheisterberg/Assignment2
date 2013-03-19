@@ -1,0 +1,21 @@
+{
+
+    "type": "module",
+    "name":"snap.radio",
+    "version":"1.0",
+    "description":"Dust Radio",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"path":"Radio.css"},
+
+        {"path":"Radio.js"},
+        {"path":"Radio.dust.js"},
+        {"path":"Radio.rhtml"}
+
+    ]
+
+}

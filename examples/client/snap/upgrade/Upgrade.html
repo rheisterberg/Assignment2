@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Browser Upgrade</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<script type=text/javascript src="../../Snap.js"></script>
+
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	
+	snap.require('snap.console.Console');
+
+	var Upgrade = snap.require('snap.upgrade.Upgrade');
+
+	var title = 'Please upgrade your browser';
+	var message = 'Your browser (#browser#) is out of date.  Our experience is best viewed with an updated browser.  Please upgrade to one of the following browsers below:';
+	
+	new Upgrade({title:title,message:message,force:true});
+
+});
+
+</script>
+</body>
+</html>

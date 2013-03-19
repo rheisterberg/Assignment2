@@ -1,0 +1,6 @@
+<div id="{eid}" class="sortby">
+    <div class="sortby-cur">
+        {#content path="srp_snap/ControlBar.Sort"/}:&nbsp;<span class="sortby-cur">{selected}<b class="sortby-arr"></b></span>
+    </div>
+    <div class="sortby-lyr">{#options}<a class="sortby-lnk" href="{href}">{text}</a>{/options}</div>
+</div>

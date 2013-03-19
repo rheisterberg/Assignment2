@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Window</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body style="width:4000px; height:2000px; border:1px solid red">
+
+<h2>Window</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    snap.require('snap.console.Console').show();
+
+    var Tab = snap.require('snap.tabs.Tab');
+    var Tabs = snap.require('snap.tabs.Tabs');
+
+    var Button = snap.require('snap.button.Button');
+    var Window = snap.require('snap.window.Window');
+
+    var Container = snap.require('snap.Container');
+
+    function createWindow() {
+
+        var tab1 = new Tab({
+            title:'Tab 1',
+            styles:{body:{'text-align':'center'}},
+            content:'&lt;tab 1 content &gt;',
+            selected:true
+        });
+
+        var tab2 = new Tab({
+            title:'Tab 2',
+            styles:{body:{'text-align':'center'}},
+            content:'&lt;tab 2 content &gt;'
+        });
+
+        var tab3 = new Tab({
+            title:'Tab 3',
+            styles:{body:{'text-align':'center'}},
+            content:'&lt;tab 3 content &gt;'
+        });
+
+        var tabs = new Tabs({
+            children:[tab1,tab2,tab3],
+            autosize:true
+        });
+
+        var submit = new Button({
+            text:'Submit',
+            classes:{elem:'sml blue'},
+            styles:{elem:{margin:'0px 5px'}}
+        });
+
+        var cancel = new Button({
+            text:'Cancel',
+            classes:{elem:'sml blue'},
+            styles:{elem:{margin:'0px 5px'}}
+        });
+
+        var buttons = new Container({
+            styles:{elem:{margin:'5px 10px','text-align':'right'}},
+            children:[cancel,submit]
+        });
+
+        var wnd = new Window({
+            title:'Window Title',
+            children:[tabs,buttons],
+            styles:{elem:{width:'500px',height:'300px'}},
+            modal:false
+        });
+
+        submit.subscribe('click',wnd.hide.bind(wnd,'submit'));
+        cancel.subscribe('click',wnd.hide.bind(wnd,'cancel'));
+
+        return wnd;
+
+    }
+
+    var launch = new Button({
+        text:'Launch Window',
+        styles:{elem:{top:'400px',left:'20px','text-align':'center'}},
+        classes:{elem:'med blue'},
+        target:document.body
+    });
+
+    launch.subscribe('click',onLaunchWindow);
+
+    function onLaunchWindow(event) {
+        var wnd = createWindow();
+        wnd.show({title:'Window Title'});
+    }
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+<div id="{eid}" class="listings">
+	<span class="states">{#states}<a class="state{#selected} selected"{/selected}" href="{href}">{text}</a>{pipe}{/states}</span>
+</div>

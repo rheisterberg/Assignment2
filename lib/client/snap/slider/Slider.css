@@ -1,0 +1,28 @@
+
+.slider {position:relative; padding:5px 10px}
+
+.slider .label {position:relative; color:#999; font-weight:bold; font-size:11px; text-align:center}
+
+.slider .slide {position:relative; padding:8px 0px}
+
+.slider .slide .range, .slider .slide .bar {background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAbCAIAAADQ5mlaAAAAW0lEQVQokWPaiQGYJDEAEw8GYGLAAOQLfcEATM8xAFPuGTU0xPTv5280xPT3x080xPT3yw80BBT6joaY/nz5hoawqcJmFqaN51bZoCFsQciGAagaqr8wAJaABgBr4POvgonhmgAAAABJRU5ErkJggg==) repeat-x}
+.slider .slide .range {position:relative; height:9px; background-position:0px 0px; border-style:solid; border-color:#b9b9b9; border-width:0px 1px; cursor:pointer}
+
+.slider .slide .bar {position:relative; height:9px; background-position:0px -9px}
+.slider .slide .bar.ds {background-position:0px -18px}
+
+.slider .ticks {position:absolute; height:17px; top:-4px; left:-1px}
+
+.slider .tick {position:absolute; width:1px; height:100%;font-size:0; background-color:#999}
+
+.slider .hdl {background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAA/CAYAAAA7WULaAAAC4klEQVRIx8VXO4taQRQexwe+n4hRNKLCJiimuVWqELBKY4ot8guSH5Am/yCQNvkBktI+5dbbKEjEFAspFrQxhaLe6/Pem3NmHeP1TlbHhWTgY4bd+eabc+45HyM1TZMALofD4fder2e2Wi0bOp2OORgMhpvN5gPup4QQT7/f/zoej6uZTIaUy2UbSqUSWa/XSSB+hP3PKTAfgYoPCR6Ph2yVLaCUkmQySWazGVFVtUDhBOJyuQgOEWEfbrebLJdLdj32B8MwjgL34WCkU1Q4wUKSUnr5pW8hNZtN4YzA0e12CTVWawuJrw9nrhSNRgnVlytLIo6RvF4vkLTlyUq7RBjqQup6jLRR52yh6zoDXx/OiB3J0BZSMTGSrp4eE5IWi8Vd9vYrolarCWeuAt1AaO/bpVRFVKvVM2sPyx1PwewcU8I97OM6HI5BOp3+hQHy1IqAfZRIJIjf7/+B19Oha9/kcrlr6NA2HCJEKpVqZ7PZ97C/w2OKg3wQoGiaZsNqtVJA7THE5eH9xIxlOp1WC4UCURTFhkqlgomwG0s+n2dBirLmdDoJGg+o/jEWzCDc+2jK0a12xnKWR/wbNzo0lkajIZy50sOMRcYjdsYi3bkPMhY5C9POUEJjkYlJaCz1el04/0dj2bfd+wBPAqux4F2hrf+KyWTCSshiLIBraLA2ZEeIeDxuM5ZnPp8vDxalRCIRG2KxmBIIBJ7CrS54P/lA+tN8Ps+EQiH2yDgEqGA8Adj3Dva/RlIRzMKNBDQQ0UD/ACUWG5CfUMw/PmNOSTvuwyzTU7+R8PEhM6QqYlflVzeahQQPReHMCaPRCJS25b//D9HM1+iy1JAgcV+n5kZO6S4RG12eZGxfJVIegUqHKT2qJBMTgpWRuednOIrFonDmA4uWvnqRk/II6K0zjQXL/dS6wwyyjwvEm3A4rKLT3EfABICp4K+FFpLWwWDwLXjBTzjlFpSFgM6+hcM/w/6r38PDK7LQ5NB0AAAAAElFTkSuQmCC) no-repeat}
+
+.slider .hdl {position:absolute; top:-5px; width:13px; height:21px; background-position:0px 0px; cursor:pointer}
+.slider .hdl.drag {background-position:0px -21px}
+.slider .hdl.ds {background-position:0px -42px}
+
+.slider .legend {width:100%; margin-top:2px; overflow:hidden; }
+
+.slider .legend .left {float:left; color:#999; font-weight:bold; font-size:11px}
+.slider .legend .right {float:right; color:#999; font-weight:bold; font-size:11px}
+

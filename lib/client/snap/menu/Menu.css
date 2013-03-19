@@ -1,0 +1,16 @@
+
+.menu {position:absolute; list-style:none; padding:0px; z-index:1; background-color:#fff}
+
+.item {position:relative; font-family:verdana; font-size:x-small}
+.item.h {color:#fff; background-color:#005daa}
+
+.item a.i {position:relative; display:block; padding:4px 4px 4px 20px; background:transparent right center no-repeat}
+
+.item a.x {background-image:url(data:image/gif;base64,R0lGODlhDAAJAIAAAAJrtf///yH5BAEAAAEALAAAAAAMAAkAAAIRjAOnB73b0mNummjx1I/vWQAAOw==)}
+.item.h a.x {color:#fff; background-image:url(data:image/gif;base64,R0lGODlhDAAJAIAAAP///////yH5BAEAAAEALAAAAAAMAAkAAAIRjAOnB73b0mNummjx1I/vWQAAOw==)}
+
+.item img.i {position:absolute; top:2px; left:2px; width:16px; height:16px}
+
+.item .menu {display:none}
+
+

@@ -1,0 +1,14 @@
+<div id="{eid}" class="pnl"{#hidden} style="display:none"{/hidden}>
+	<div class="pnl-h">
+		{#action}<a class="more" href="javascript:;">{#content path="srp_snap/Aspects.seeAll"/}<span class="hdn">{title}</span></a>{/action}
+		<span class="pnl-h"><h3>{title}</h3></span>
+	</div>
+	<div class="pnl-b">
+		<form id="{eid}" name="price" class="asp-price">
+		<input type="hidden" value="1" name="_mPrRngCbx">
+		<div class="asp-e enter-price hdn"><b class="sprIconStatusMsg"/>Please enter a minimum and/or maximum price before continuing.</div>
+		$ <label for="{udloid}" class="hdn">Enter minimum price</label><input id="{udloid}" type="text" value="" name="_udlo" maxlength="13" size="6" class="price"> to $ <label for="{udhiid}" class="hdn">Enter maximum price</label><input id="{udhiid}" type="text" value="" name="_udhi" maxlength="13" size="6" class="price"><label class="hdn" for="{submitid}">Submit price range</label><input id="{submitid}" type="button" class="sprBtnSRP1 submit disabled" disabled="disabled">
+		</form>
+	</div>
+</div>
+

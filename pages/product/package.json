@@ -1,0 +1,24 @@
+{
+    "name" : "product",
+
+    "template" : "product.dust",
+    "controller" : "controller.js",
+    
+    "models" : {
+        "crumbs" : { "url" : "http://localhost:8080/pages/product/data/crumbs.json", "models" :[], "delay":50 },
+        "items" : { "url" : "http://localhost:8080/pages/product/data/items.json", "models" :[], "delay":2000 }
+    },
+    
+    "views" : {
+        "header" : { "path" : "./views/header", "models" : [], "delay":10},
+        "crumbs" : { "path" : "./views/crumbs", "models" : ["crumbs"], "delay":200},
+        "slider" : { "path" : "./views/slider", "models" : [], "context": { "label":"Size", "min":0,"max":100,"low":0,"high":100 }, "delay":200},
+        "type" : { "path" : "./views/filter/type", "models" : [], "context": { "label":"Type", "value":"Any" }, "delay":200},
+        "brand" : { "path" : "./views/filter/brand", "models" : [], "context": { "label":"Brand", "value":"Any" }, "delay":200},
+        "sort" : { "path" : "./views/filter/sort", "models" : [], "context": { "label":"Sort", "value":"Price", "options": [{ "name":"Price", "value":"0" }, { "name":"Rating", "value":"1" }, { "name":"Size", "value":"2" }]}, "delay":200},
+        "items" : { "path" : "./views/items", "models" : ["items"], "delay":10}
+    },
+
+    "flush" : ["header","crumbs"]
+    
+}

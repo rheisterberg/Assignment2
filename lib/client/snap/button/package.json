@@ -1,0 +1,21 @@
+{
+
+    "type": "module",
+    "name":"snap.button",
+    "version":"1.0",
+    "description":"Dust Button",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"path":"Button.css"},
+
+        {"path":"Button.js"},
+        {"path":"Button.dust.js"},
+        {"path":"Button.rhtml"}
+
+    ]
+
+}

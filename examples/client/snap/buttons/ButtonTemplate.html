@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buttons</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+<style type="text/css">
+form .btn {margin:10px}
+</style>
+
+</head>
+<body>
+
+<h2>Button Template</h2>
+
+<form id="form">
+</form>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    snap.require('snap.console.Console').show();
+
+    var Form = snap.require('snap.form.Form');
+    var Button = snap.require('snap.button.Button');
+    
+    var form = new Form({eid:'#form'});
+
+    var config = {type:'button',classes:{elem:'sml blue'},value:'click',text:'Button'};
+    var button = snap.render(Button,config);
+    form.appendChild(button);
+    
+    var button = new Button({type:'button',classes:{elem:'sml blue'},value:'click',text:'Button'});
+    form.appendChild(button);
+
+    var button = snap.render(Button,{type:'button',text:'Cancel'});
+    form.appendChild(button);
+
+    var button = snap.render(Button,{type:'button',text:'Submit'});
+    form.appendChild(button);
+
+});
+
+</script>
+</body>
+</html>

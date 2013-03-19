@@ -1,0 +1,18 @@
+
+.asp .date .dt {display:inline-block; padding: 2px 0}
+
+.asp .date .dt span.label {
+	position:relative; display:inline-block; margin:0 3px; font-size:11px; color:#666;
+}
+
+.asp .date .dt input {
+	position:relative; width:60px; font-size:11px; color:#333;
+}
+
+.asp .date input.submit {
+	width:20px; height:20px; margin:-3px 0 0 3px; background-position:0 -143px; border:0px;
+}
+
+.asp .date input.submit.disabled {
+	background-position:0 -165px; border:0px;
+}

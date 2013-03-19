@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eBay Context</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var pattern = /\$\{([^\}]*)\}/g;
+
+	var content = function(context,match,key) {
+		return context[key];
+	};
+	
+	var context = {name:'Rich',count:5};
+	var template = '${name}, you have ${count} messages. Have a nice day ${name}.';
+	
+	var output = template.replace(pattern,content.bind(this,context));
+	snap.log('debug',output);
+	
+});
+
+</script>
+</head>
+<body>
+</body>
+</html>

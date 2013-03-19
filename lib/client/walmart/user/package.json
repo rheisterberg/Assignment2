@@ -1,0 +1,21 @@
+{
+    "type": "module",
+    "name":"walmart.user",
+    "version":"1.0",
+    "description":"eBay User",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"module":"walmart.cookies"},
+
+        {"path":"/snap/utils/Utf8.js"},
+        {"path":"/snap/utils/Base64.js"},
+
+        {"path":"User.js"}
+
+    ]
+
+}

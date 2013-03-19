@@ -1,0 +1,7 @@
+
+div.listings {position:relative; display:inline-block}
+
+div.listings a.state {position:relative; display:inline-block; color:#333; white-space:nowrap; text-decoration:none; cursor:pointer}
+div.listings a.state:hover {color:#1958bd}
+
+div.listings a.selected {font-weight:bold}

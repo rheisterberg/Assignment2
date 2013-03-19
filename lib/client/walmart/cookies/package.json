@@ -1,0 +1,14 @@
+{
+	"type": "module",
+	"name":"walmart.cookies",
+	"version":"1.0",
+	"description":"Snap Module:Cookies",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+		{"path":"Cookies.js"}
+	]
+
+}

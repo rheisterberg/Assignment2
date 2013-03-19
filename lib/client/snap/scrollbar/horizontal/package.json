@@ -1,0 +1,23 @@
+{
+
+    "type": "module",
+    "name":"snap.scrollbar.horizontal",
+    "version":"1.0",
+    "description":"Dust Horizontal Scrollbar",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"path":"HorizontalScrollbar.css"},
+
+        {"path":"HorizontalScrollbar.js"},
+        {"path":"HorizontalScrollbar.dust.js"},
+        {"path":"HorizontalScrollbar.rhtml"},
+
+        {"path":"HorizontalScroller.js"}
+
+    ]
+
+}

@@ -1,0 +1,24 @@
+/* See Sprites.css for background image */
+
+.asp-price {
+	font-size:11px;
+}
+
+.asp-price input.price {
+	width:50px;
+}
+
+.asp-price input.submit  {
+	width:20px; height:20px; border:none;
+	background-color:transparent;
+}
+
+.asp-price input.submit  {
+	background-position:0 -143px;
+	cursor:pointer;
+}
+
+.asp-price input.submit.disabled  {
+	background-position:0 -165px;
+	cursor:default;
+}

@@ -1,0 +1,23 @@
+
+.tree {position:relative; display:block; font-family:verdana; font-size:x-small}
+
+.tree-ul {position:relative; list-style:none; margin:0px; padding:0px}
+
+.tree-li {position:relative; display:block; min-height:16px; padding-left:16px; margin:1px 0px}
+.tree-x {position:absolute; top:0px; left:0px; width:16px; height:16px; background:#fff left center no-repeat; cursor:pointer}
+
+.tree-li.x .tree-x {background-image:url(data:image/gif;base64,R0lGODlhEAAJAKIAALWytaWmpUJBQgAAAKWipf///wAAAAAAACH5BAAAAAAALAAAAAAQAAkAAAMeCLRMUDAWIiOtE2d8a5eUMIzC1DTaZ6UspwXnEmgJADs=); cursor:pointer}
+.tree-li.c .tree-x {background-image:url(data:image/gif;base64,R0lGODlhEAAJAKIAALWytUJBQq2mrSEgIWNhYwAAAKWipf///yH5BAAAAAAALAAAAAAQAAkAAAMjCLZscDAeIyOtMxKLMywcRgVFGUxNE4HQVblD+HauJKSL0CUAOw==); cursor:pointer}
+
+.tree-li.n .tree-x {background-image:none}
+
+.tree-li.c .tree-ul {display:none}
+
+.node {position:relative; min-height:16px}
+
+.node-i {position:absolute; top:0px; left:0px; width:16px; height:16px; overflow:hidden}
+
+.node-a {position:relative; display:block; margin-left:18px; padding:1px; cursor:pointer}
+.node-a:hover {color:#00c; text-decoration:underline}
+
+

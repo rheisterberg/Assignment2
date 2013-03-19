@@ -1,0 +1,73 @@
+
+.asf .win-h {display:none}
+.asf .win-b {padding:0px}
+
+.asf-f {width:660px}
+.asf-t {width:100%}
+
+.asf-f .asf-c {position:absolute; display:block; width:10px; height:11px; top:5px; right:5px; padding:5px; cursor:pointer}
+.asf-f .asf-c {background:transparent center center no-repeat; background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAC3SURBVBiVldDNUYRQEATgD8q7hmAIbACUtRnsQgBgBKaiEQgBUBICBQFACIawRoAHB0X3ZFe9S0//zJtE3tWocTKVF3vk3R16NCkyPGBwjSFmWRLOOQytqayDa1BhWcficBPOM2ZU8m5LrnCJmWS3zwlvf6rP61j0kH5TU9mj3Yna4PwrcfvMPRbc4jFEr/hAto7F+1bdh6gxlV+PJrhIzLtnPGExlYdfxT9ne0njLAOOrnGM2fwJ8lM8ivxzwi8AAAAASUVORK5CYII=)}
+
+.asf-t td.shadow {
+	width:10px;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZGNkYyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkY2RjZGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background:-moz-linear-gradient(left, rgba(220,220,220,0) 0%, rgba(220,220,220,1) 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, right top, color-stop(0%,rgba(220,220,220,0)), color-stop(100%,rgba(220,220,220,1))); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(left, rgba(220,220,220,0) 0%,rgba(220,220,220,1) 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(left, rgba(220,220,220,0) 0%,rgba(220,220,220,1) 100%); /* Opera 11.10+ */
+	background:-ms-linear-gradient(left, rgba(220,220,220,0) 0%,rgba(220,220,220,1) 100%); /* IE10+ */
+	background:linear-gradient(left, rgba(220,220,220,0) 0%,rgba(220,220,220,1) 100%); /* W3C */
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00dcdcdc', endColorstr='#dcdcdc',GradientType=1 ); /* IE6-8 */
+}
+
+.asf-t td.options {width:180px; padding:10px; vertical-align:top}
+.asf-t td.options .title {color:#333; padding-bottom:10px; font-weight:bold; font-size:15px}
+
+.asf-t div.others {position:relative; max-height:300px; padding-right:8px}
+
+.asf-t div.other {position:relative; padding:5px 0px 5px 5px; line-height:1.2em}
+.asf-t div.other a.other {text-decoration:none; color:#666}
+.asf-t div.other a.other:focus {outline:none}
+
+.asf-t div.other.s {margin-right:15px; background-color:#999}
+.asf-t div.other.s a.other {font-weight:bold; color:#fff}
+
+.asf-t div.other .chvrn {
+		font-size:0;
+		height:0;
+		line-height:0;
+		border-style:solid;
+		border-color:transparent;
+		border-left-color:#999;
+		border-width:15px 0px 15px 15px;
+		position:absolute; top:0px; right:-15px;
+}
+
+.asf-t td.frame {padding:30px 10px 10px 10px; vertical-align:top}
+.asf-t td.frame div.frame {height:300px; padding:5px 20px}
+
+.asf-t div.frame table.asv-t {width:100%}
+.asf-t div.frame table.asv-t td {width:48%; vertical-align:top}
+.asf-t div.frame table.asv-t td.spacer {width:4%}
+
+.asf-t div.frame table.asv-t span.cnt {
+	float:right; position:relative; top:4px; margin-left:5px;
+	font-size:11px; color:#999; text-indent:0px;
+}
+
+.asf-t td.controls {padding:10px}
+
+.asf-t td.controls a.cancel {float:right; position:relative; display:block; margin:6px 10px; cursor:pointer}
+
+.asf-t td.controls .btn {float:right; display:block}
+.asf-t td.controls .btn button {padding:3px 20px}
+
+.asf-t input.txt {width:40px; font-size:11px}
+
+.asf-f .asp-e {
+	position:relative; display:none; margin:5px 0px;
+	color:#f00; font-family:verdana; font-size:x-small;
+}
+
+

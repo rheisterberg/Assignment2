@@ -1,0 +1,19 @@
+{
+
+	"type": "module",
+	"name":"snap.slider.currency",
+	"version":"1.0",
+	"description":"Dust Slider",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"module":"snap.slider.logarithmic"},
+		
+		{"path":"SliderCurrency.js"}
+
+	]
+
+}

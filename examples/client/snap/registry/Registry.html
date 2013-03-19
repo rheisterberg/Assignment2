@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registry</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Registry</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    snap.require('snap.console.Console');
+
+    var Button = snap.require('snap.button.Button');
+    var Registry = snap.require('snap.Registry');
+
+    var button = new Button({
+        text:'Delete Button',
+        styles:{elem:{top:'200px',left:'200px','text-align':'center'}},
+        classes:{elem:'med blue'},
+        target:document.body
+    });
+
+    button.subscribe('click',onButtonClick);
+
+    function onButtonClick(event) {
+        button.elem.remove();
+        Registry.update();
+    }
+
+});
+</script>
+</body>
+</html>

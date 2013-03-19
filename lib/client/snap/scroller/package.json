@@ -1,0 +1,18 @@
+{
+
+	"type": "module",
+	"name":"snap.scroller",
+	"version":"1.0",
+	"description":"Dust Scroller",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"Scroller.css"},
+		{"path":"Scroller.js"}
+
+	]
+
+}

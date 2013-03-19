@@ -1,0 +1,23 @@
+{
+
+    "type": "module",
+    "name":"snap.calendar",
+    "version":"1.0",
+    "description":"Dust Calendar",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"path":"/snap/dust/sprites/Sprites.css"},
+
+        {"path":"Calendar.css"},
+        {"path":"Calendar.js"},
+
+        {"path":"Month.dust.js"},
+        {"path":"Month.rhtml"}
+
+    ]
+
+}

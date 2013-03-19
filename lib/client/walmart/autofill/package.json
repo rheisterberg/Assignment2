@@ -1,0 +1,26 @@
+{
+
+    "type": "module",
+    "name":"walmart.autofill",
+    "version":"1.0",
+    "description":"Search AutoFill",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"path":"AutoFillInput.css"},
+        {"path":"AutoFillInput.js"},
+
+        {"path":"AutoFillLayer.css"},
+        {"path":"AutoFillLayer.js"},
+
+        {"path":"AutoFillLayer.dust.js"},
+        {"path":"AutoFillLayer.rhtml"},
+
+        {"path":"/srp_snap/AutoFillLayer.4cc"}
+
+    ]
+
+}

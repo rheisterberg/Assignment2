@@ -1,0 +1,8 @@
+<div id="{eid}" class="slider">
+    <div class="label">{label}</div>
+    <div class="slide">
+        <div class="range">
+            <div class="bar"></div>
+        </div>
+    </div>
+</div>

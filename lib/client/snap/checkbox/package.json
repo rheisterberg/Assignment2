@@ -1,0 +1,21 @@
+{
+
+    "type": "module",
+    "name":"snap.checkbox",
+    "version":"1.0",
+    "description":"Dust Checkbox",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"path":"Checkbox.css"},
+
+        {"path":"Checkbox.js"},
+        {"path":"Checkbox.dust.js"},
+        {"path":"Checkbox.rhtml"}
+
+    ]
+
+}

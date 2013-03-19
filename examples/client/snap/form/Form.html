@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+<style type="text/css">
+#Form table td {padding:4px; border:1px solid #ccc}
+</style>
+</head>
+<body>
+
+<h2>Form</h2>
+
+<form id="Form">
+<table><tbody>
+<tr><td>Button</td><td id="Button"></td></tr>
+<tr><td>Checkbox</td><td id="Checkbox"></td></tr>
+<tr><td>File</td><td id="File"></td></tr>
+<tr><td>Hidden</td><td id="Hidden"></td></tr>
+<tr><td>Image</td><td id="Image"></td></tr>
+<tr><td>Password</td><td id="Password"></td></tr>
+<tr><td>Radio</td><td id="Radio"></td></tr>
+<tr><td>Reset</td><td id="Reset"></td></tr>
+<tr><td>Submit</td><td id="Submit"></td></tr>
+<tr><td>Text</td><td id="Text"></td></tr>
+<tr><td>Select</td><td id="Select"></td></tr>
+<tr><td>TextArea</td><td id="TextArea"></td></tr>
+</tbody></table>
+</form>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console').show();
+
+	var logo = 'Ebay.gif';
+
+	function onClick(event,object) {
+		snap.log('debug',event.type);
+	}
+
+	function onCheck(event,object) {
+		snap.log('debug',event.type,'checked',object);
+	}
+
+	function onChange(event,object) {
+		snap.log('debug',event.type);
+	}
+
+	function onSelect(event,selected) {
+		snap.log('debug',event.type);
+		for (var idx = 0,option;(option = selected[idx]);idx++) {
+			snap.log('debug','option value',option.value,'text',option.text);
+		}
+	}
+
+	function onSubmit(event,object) {
+		snap.log('debug',event.type);
+		return false;
+	}
+
+    var Form = snap.require('snap.form.Form');
+
+    var InputButton = snap.require('snap.form.InputButton');
+    var InputCheckbox = snap.require('snap.form.InputCheckbox');
+
+    var InputFile = snap.require('snap.form.InputFile');
+    var InputHidden = snap.require('snap.form.InputHidden');
+
+    var InputImage = snap.require('snap.form.InputImage');
+    var InputPassword = snap.require('snap.form.InputPassword');
+
+    var InputRadio = snap.require('snap.form.InputRadio');
+
+    var InputReset = snap.require('snap.form.InputReset');
+    var InputSubmit = snap.require('snap.form.InputSubmit');
+
+    var InputText = snap.require('snap.form.InputText');
+
+    var Select = snap.require('snap.form.Select');
+    var TextArea = snap.require('snap.form.TextArea');
+
+	var button = new InputButton({target:'Button',value:'Button'});
+	button.subscribe('click',onClick,this);
+
+	var checkbox1 = new InputCheckbox({target:'Checkbox',text:'Checkbox 1',checked:true});
+	checkbox1.subscribe('click',onCheck,this);
+
+	var checkbox2 = new InputCheckbox({target:'Checkbox',text:'Checkbox 2'});
+	checkbox2.subscribe('click',onCheck,this);
+
+	var file = new InputFile({target:'File'});
+	file.subscribe('click',onClick,this);
+
+	var hidden = new InputHidden({target:'Hidden',value:'Hidden'});
+
+	var image = new InputImage({target:'Image',src:logo});
+	image.subscribe('click',onClick,this);
+
+	var password = new InputPassword({target:'Password',value:'password'});
+	password.subscribe('change',onChange,this);
+
+	var radio1 = new InputRadio({target:'Radio',name:'Radio',value:'1',text:'Radio 1',checked:true});
+	radio1.subscribe('click',onCheck,this);
+
+	var radio2 = new InputRadio({target:'Radio',name:'Radio',value:'2',text:'Radio 2'});
+	radio2.subscribe('click',onCheck,this);
+
+	var radio3 = new InputRadio({target:'Radio',name:'Radio',value:'3',text:'Radio 3'});
+	radio3.subscribe('click',onCheck,this);
+
+	var reset = new InputReset({target:'Reset',value:'Reset'});
+	reset.subscribe('click',onClick,this);
+
+	var submit = new InputSubmit({target:'Submit',value:'Submit'});
+	submit.subscribe('click',onClick,this);
+
+	var text = new InputText({target:'Text',value:'Text'});
+	text.subscribe('change',onChange,this);
+
+	var select = new Select({
+		target:'Select',
+		options:[
+			{value:'1',text:'Option 1'},
+			{value:'2',text:'Option 2'},
+			{value:'3',text:'Option 3'},
+			{value:'4',text:'Option 4'}
+		]
+	});
+
+	select.subscribe('change',onSelect,this);
+
+	var textarea = new TextArea({target:'TextArea',value:'Text'});
+	textarea.subscribe('change',onChange,this);
+
+	var form = new Form({
+		eid:'Form',
+		styles:{elem:{margin:'20px'}},
+		children:[
+			button,
+			checkbox1,checkbox2,
+			file,
+			hidden,
+			image,
+			password,
+			radio1,radio2,radio3,
+			reset,
+			submit,
+			select,
+			textarea
+		]
+	});
+
+	form.subscribe('submit',onSubmit,this);
+
+});
+
+</script>
+</body>
+</html>

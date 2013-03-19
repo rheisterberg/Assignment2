@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drag & Drop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Drag & Drop</h2>
+
+<img src="trashcan.jpg" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+	
+	var group = 'Group.gif';
+	var person = 'Person.gif';
+
+    var Container = snap.require('snap.Container');
+    var ToolButton = snap.require('snap.toolbar.ToolButton');
+
+    var Window = snap.require('snap.window.Window');
+    
+	var buttons = new Container({
+		styles:{elem:{padding:'10px',border:'1px solid #ccc'}},
+		children:[
+			new ToolButton({cid:'Button1',icon:person,text:'Button 1',classes:{elem:'tbtn lrg blu rt'}}),
+			new ToolButton({cid:'Button2',icon:person,text:'Button 2',classes:{elem:'tbtn lrg blu rt'}}),
+			new ToolButton({cid:'Button3',icon:person,text:'Button 3',classes:{elem:'tbtn lrg blu rt'}}),
+			new ToolButton({cid:'Button4',icon:person,text:'Button 4',classes:{elem:'tbtn lrg blu rt'}})
+		],
+		autosize:true,
+		manager:'snap.horizontal.HorizontalLayout'
+	});
+
+	for (var idx = 0;(idx < buttons.children.length);idx++) {
+		var button = buttons.children[idx];
+		button.subscribe('click',function(message) {
+			var button = message.source;
+			buttons.removeChild(button);
+		});
+
+	}
+	
+	var wnd = new Window({
+		title:'Horizontal Layout',
+		styles:{elem:{width:'500px',height:'300px'}},
+		children:[buttons],
+		modal:false
+	});
+
+	wnd.show();
+	
+});
+</script>
+</body>
+</html>

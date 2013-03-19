@@ -1,0 +1,8 @@
+
+table.tetris {
+	position:relative;
+}
+
+table.tetris td.tetris {
+	position:relative; vertical-align:top;
+}

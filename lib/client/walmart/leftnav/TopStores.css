@@ -1,0 +1,52 @@
+.ff-rail {
+    margin-bottom: 15px;
+}
+.rct {
+    border: 0 none;
+}
+
+
+.rct_cm {
+    padding: 10px 0;
+}
+
+.pbf {
+    padding-bottom: 1px;
+}
+
+.list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.list li {
+    color: #3333CC;
+    margin: 3px 0 6px;
+    line-height:16px;
+}
+
+.dl-cnt {
+    color: #666666;
+    font-family: Verdana;
+    font-size: x-small;
+}
+
+.rct_s {
+    border: 1px solid #CCCCCC;
+}
+
+.rct_fm {
+    padding: 10px 0;
+    text-align: left;
+}
+
+div.rct h2.rct_hm {
+	color: #333;
+	font:bold small Helvetica,Arial;
+	padding: 5px 0!important;
+	border-bottom: solid 1px #CCC;
+}
+
+.rct_s {
+    border-width: 1px 0;
+}

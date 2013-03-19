@@ -1,0 +1,37 @@
+
+div.viewas {position:relative; display:inline-block}
+
+div.viewas-lyr {
+    position:absolute; display:none; z-index:1; top:0px; right:0px;
+    padding:5px 10px; background-color:#fff; border:1px solid #ccc; border-radius:5px; text-align:right
+}
+
+b.viewas-arr {
+    display:inline-block;width:8px; height:7px; margin:5px 3px 0px 3px;
+    background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAVElEQVQIW2OQjNhrBsQzcWBpBiDBBsQPgfg/Gt7y//9/BgYQAeREoUn+BGIVuAKoosNICibDxJEVGADxHyB+C8RCGAqgiqYBcSayGLoCfiBmRhYDAL+ugCzjWB0ZAAAAAElFTkSuQmCC) no-repeat;
+}
+
+b.viewas-list, b.viewas-gallery, b.viewas-customize {
+    position:relative; display:inline-block;width:14px; height:14px; top:2px; margin-left:5px;
+}
+
+b.viewas-list {
+    background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAAQElEQVQ4jWNIS0v7j4yBgIEYzIBLI7o4Oqa+RoJOJVYh0X4cDZwREjiSEXv/I2OKNaKLo2Pqa6RdAhgNnJEdOADQHvkWX7Of/AAAAABJRU5ErkJggg==) no-repeat 0px -14px;
+}
+
+b.viewas-gallery {
+    background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAAPklEQVQ4y2NIS0v7jw0DAQMI45JnGNWIRyNMAamYfI2j0UELjZIRe//jwAxQjFV+VCMBjWRhijSORge1NQIAl6VNygyCMNcAAAAASUVORK5CYII=) no-repeat 0px -14px;
+}
+
+b.viewas-customize {
+    background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAA9klEQVR42o2TsQ2EMAxFb4S01zFCRmAEyitTUWcENskITHBiBEbICIzg+0i29KVTjIsnxchPsWP8EpE/1nUtoIHM3xlOriDpeQECrpFsUtbEjWOleeJMiQcQjj1xAjKgPvVYBmLxRL65gp3ECyRXNO5E0EnenkSv9MkVGX5hLT+FRJ4n/xAmutBsF+s3Kna9qdlco2IGJ8lpKL4/3wIacLfDkitIel6AgGskm5Q1ceNYaZ44U+IBhGNPnIAMqE89loFYPJFvrmAn8QKx7bgTQSf5cTu80uPbwS+s5aeIyPPkfmPbQbNdrN+o2PWmZnONihmcJlufPw/K3Vi6HjhzAAAAAElFTkSuQmCC) no-repeat 0px -14px;
+}
+
+a.viewas-lnk {
+    position:relative; display:block; padding:4px 0px; background-position:0px -14px;
+    color:#1958bd; white-space:nowrap; text-decoration:none; cursor:pointer
+}
+
+a.viewas-lnk:hover {color:#1958bd}
+a.viewas-lnk:hover b {background-position:0px -14px}
+

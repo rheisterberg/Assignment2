@@ -1,0 +1,24 @@
+{
+
+	"type": "module",
+	"name":"snap.console",
+	"version":"1.0",
+	"description":"Dust Console",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"module":"snap.window"},
+		{"module":"snap.button"},
+
+		{"module":"snap.tabs"},
+		{"module":"snap.toolbar"},
+
+		{"path":"Console.css"},
+		{"path":"Console.js"}
+
+	]
+
+}

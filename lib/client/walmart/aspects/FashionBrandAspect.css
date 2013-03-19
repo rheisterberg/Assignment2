@@ -1,0 +1,12 @@
+
+.fashion div.brnd {max-height:115px; overflow:hidden}
+    
+.fashion input.search {
+	width:200px; margin:3px 0px; font-size:11px;
+}
+
+.fashion .cbx i.hl {background-color:#9beb51; font-weight:bold}
+
+.fashion div.brnd .err {
+  padding:5px; font-size:11px; color:#666;
+}

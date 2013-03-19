@@ -1,0 +1,13 @@
+
+.asf-f .distance {margin-top:20px}
+
+.asf-f .distance input.zipcode {margin:5px 0}
+
+.asf-f .distance input.submit {
+	width:20px; height:20px; padding:0; border:none;
+	background-color:transparent; background-attachment:scroll;
+}
+
+.asf-f .distance div.cbx a.cbx:hover {
+	color:#333; text-decoration:none; cursor:default;
+}

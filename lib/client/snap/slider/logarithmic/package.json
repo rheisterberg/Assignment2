@@ -1,0 +1,19 @@
+{
+
+	"type": "module",
+	"name":"snap.slider.logarithmic",
+	"version":"1.0",
+	"description":"Dust Slider",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"module":"snap.slider.range"},
+		
+		{"path":"SliderLogarithmic.js"}
+
+	]
+
+}

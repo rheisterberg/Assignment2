@@ -1,0 +1,24 @@
+{
+
+	"type": "module",
+	"name":"walmart.views.list",
+	"version":"1.0",
+	"description":"Search List View",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"ListItem.dust.js"},
+		{"path":"ListItem.rhtml"},
+
+		{"path":"ListProduct.dust.js"},
+		{"path":"ListProduct.rhtml"},
+
+		{"path":"ListView.js"}
+
+	]
+
+}
+

@@ -1,0 +1,36 @@
+<div id="{eid}" class="seller">
+	<div class="asp-e invalid-characters"><b class="sprIconStatusMsg"/>{#content path="srp_snap/SellerAspect.invalidCharactersError"/}</div>
+	<div class="asp-e favorite-sellers"><b class="sprIconStatusMsg"/>{#content path="srp_snap/SellerAspect.Errors.favSellerErrorMsg"/}</div>
+	<div class="cbx">
+		<input type="checkbox" class="cbx" name="_fss" value="1">
+		<a class="cbx">{#content path="srp_snap/SellerAspect.onlyShowItemsFrom"/}</a>
+	</div>
+	<div class="radios">
+		<div class="rbx">
+			<a class="rbx"><input type="radio" value="LH_SpecificSeller" name="seller" /><span class="rbx">{#content path="srp_snap/SellerAspect.specificSellers"/}</span></a>
+			<div class="specific">
+				<select name="_saslop">
+					<option value="1">{#content path="srp_snap/SellerAspect.sellerType.INCLUDE"/}</option>
+					<option value="2">{#content path="srp_snap/SellerAspect.sellerType.EXCLUDE"/}</option>
+				</select>
+				<input type="text" value="" size="25" name="_sasl">
+				<div class="asp-e specify-sellers"><b class="sprIconStatusMsg"/>{#content path="srp_snap/SellerAspect.specificSellerErrMsg"/}</div>
+				<div class="note">{#content path="srp_snap/SellerAspect.specificSellerHelperText"/}</div>
+			</div>
+		</div>
+		<div class="rbx"><a class="rbx"><input type="radio" value="LH_SellerWithStore" name="seller"><span class="rbx">{#content path="srp_snap/GlobalAspects.AspectTitle.LH_SellerWithStore"/}</span></a></div>
+		<div class="rbx"><a class="rbx"><input type="radio" value="LH_FavSellers" name="seller"><span class="rbx">{#content path="srp_snap/GlobalAspects.AspectTitle.LH_FavSellers"/}</span></a></div>
+		<div class="rbx"><a class="rbx"><input type="radio" value="LH_TopRatedSellers" name="seller"><span class="rbx">{#content path="srp_snap/GlobalAspects.AspectTitle.LH_TopRatedSellers"/}</span></a></div>
+		{#outletSellers}
+		<div class="rbx"><a class="rbx"><input type="radio" value="LH_OUTLETMALLSELLERS" name="seller"><span class="rbx">{#content path="srp_snap/GlobalAspects.AspectTitle.LH_OUTLETMALLSELLERS"/}</span></a></div>
+		{/outletSellers}
+	</div>
+	{#sellerTypeModel}
+	<div class="cbx"><a class="cbx"><input type="checkbox" class="cbx" name="_fslt" value="1"><span class="cbx">{#content path="srp_snap/SellerAspect.sellerTypeText"/}</span></a></div>
+	<div class="radios">
+		<div class="rbx"><a class="rbx"><input type="radio" value="2" name="_saslt"><span class="rbx">{#content path="srp_snap/GlobalAspects.AspectDisplay.LH_SellerType_Business"/}</span></a></div>
+		<div class="rbx"><a class="rbx"><input type="radio" value="1" name="_saslt"><span class="rbx">{#content path="srp_snap/GlobalAspects.AspectDisplay.LH_SellerType_Private"/}</span></a></div>
+	</div>
+	{/sellerTypeModel}
+</div>
+	

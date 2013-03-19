@@ -1,0 +1,6 @@
+<nav id="{eid}" class="gh-crumbs">
+<span class="crumb"><a href="{home}"><img src="/pages/product/images/home.png" class="home"></a></span><span class="arrow">&gt;</span>
+{#crumbs}
+<span class="crumb"><a href="{href}">{name}</a></span><span class="arrow">&gt;</span>
+{/crumbs}
+</nav>

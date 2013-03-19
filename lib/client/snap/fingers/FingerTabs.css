@@ -1,0 +1,34 @@
+
+.ftabs {position:relative}
+
+.ftabs .ftabs-h {position:relative}
+.ftabs .ftabs-h .scroll-y-bar {z-index:5}
+
+.ftab-h {
+	position:relative; margin:4px 3px; padding:3px 4px; 
+	overflow:hidden; white-space:nowrap; text-overflow:ellipsis;
+	background-color:#fff;border:1px solid #fff;
+}
+
+.ftab-h.f.s {
+	z-index:1;
+	margin-right:0px;
+	box-shadow:1px 2px 13px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.4);
+	-ms-filter:progid:DXImageTransform.Microsoft.Shadow(strength=10,direction=135,color='#cccccc');
+	filter:progid:DXImageTransform.Microsoft.Shadow(strength=10,direction=135,color='#cccccc');
+}
+
+.ftab-h.f.b {
+	z-index:1;
+	margin-right:-3px;
+	border:solid #ccc; border-width:1px 0px 1px 1px;
+}
+
+.ftab-h .ftab-a {position:relative; color:#333; text-decoration:none; cursor:pointer}
+.ftab-h .ftab-a:hover {color:#1958bd}
+
+.ftabs-b {position:absolute; display:none; z-index:1; background-color:#fff; border-radius:4px}
+.ftabs-b .ftab-b {position:relative; display:none; background-color:#fff; overflow:hidden}
+

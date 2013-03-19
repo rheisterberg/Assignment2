@@ -1,0 +1,23 @@
+{
+
+    "type": "module",
+    "name":"walmart.related",
+    "version":"1.0",
+    "description":"Search Related Searches",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"path":"Related.css"},
+        {"path":"Related.js"},
+
+        {"path":"Related.dust.js"},
+        {"path":"Related.rhtml"},
+
+        {"path":"/srp_snap/Related.4cc"}
+
+    ]
+
+}

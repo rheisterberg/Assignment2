@@ -1,0 +1,10 @@
+<div id="{eid}" class="date">
+  <div class="dt">
+    <span class="label">{#content path="srp_snap/Aspects.From"/}</span>
+    <input type="text" name="{fromParam}" placeholder="mm/dd/yyyy" value="{fromValue}" size="10" class="after">
+  </div>
+  <div class="dt">
+    <span class="label">{#content path="srp_snap/Aspects.To"/}</span>
+    <input type="text" name="{toParam}" placeholder="mm/dd/yyyy" value="{toValue}" size="10" class="before">
+  </div>
+</div>

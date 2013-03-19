@@ -1,0 +1,19 @@
+{
+
+    "type": "module",
+    "name":"walmart.views.item",
+    "version":"1.0",
+    "description":"Search Item",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+
+        {"path":"ItemTemplatesHelpers.js"},
+        {"path":"ItemTemplatingHelpers.js"}
+
+    ]
+
+}
+

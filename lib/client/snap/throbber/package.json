@@ -1,0 +1,18 @@
+{
+
+	"type": "module",
+	"name":"snap.throbber",
+	"version":"1.0",
+	"description":"Dust Throbber",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"Throbber.css"},
+		{"path":"Throbber.js"}
+
+	]
+
+}

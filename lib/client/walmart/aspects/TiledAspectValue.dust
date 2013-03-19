@@ -1,0 +1,1 @@
+<a  id="{eid}" class="tile" href="{href}">{text|s}</a>

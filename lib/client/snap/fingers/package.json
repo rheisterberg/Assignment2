@@ -1,0 +1,25 @@
+{
+
+	"type": "module",
+	"name":"snap.fingers",
+	"version":"1.0",
+	"description":"Dust Finger FingerTabs",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"FingerTabs.css"},
+
+		{"path":"FingerTab.js"},
+		{"path":"FingerTab.dust.js"},
+		
+		{"path":"FingerTabs.js"},
+		{"path":"FingerTabs.dust.js"},
+
+		{"path":"FingerTabsLayout.js"}
+
+	]
+
+}

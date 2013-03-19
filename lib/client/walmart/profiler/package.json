@@ -1,0 +1,15 @@
+{
+	"type": "module",
+	"name":"walmart.context",
+	"version":"1.0",
+	"description":"eBay Client Profiler",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+	    {"path":"Profiler.js"},
+	    {"path":"Performance.js"}
+	]
+	
+}

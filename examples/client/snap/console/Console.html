@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Console</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Console</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console').show();
+
+	var debugs = 1;
+	var excepts = 1;
+
+	function onShow(event) {
+		snap.require('snap.console.Console').show();
+	}
+
+	function onDebug(event) {
+		snap.log("debug","This is debug message " + debugs++);
+	}
+
+	function onExcept(event) {
+		snap.log("except","This is exception message " + excepts++);
+	}
+
+    var ToolButton = snap.require('snap.toolbar.ToolButton');
+    
+	var launch = new ToolButton({text:'Launch Console',styles:{elem:{margin:'10px'}},classes:{elem:'btn med blue'},target:document.body});
+	launch.subscribe("click",onShow);
+
+	var debug = new ToolButton({text:'Log Debug',styles:{elem:{margin:'10px'}},classes:{elem:'btn med blue'},target:document.body});
+	debug.subscribe("click",onDebug);
+
+	var except = new ToolButton({text:'Log Except',styles:{elem:{margin:'10px'}},classes:{elem:'btn med blue'},target:document.body});
+	except.subscribe("click",onExcept);
+
+});
+</script>
+</body>
+</html>

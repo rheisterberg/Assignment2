@@ -1,0 +1,7 @@
+{   
+    "top" : { "content": "<div id=\"TopPanel\" style=\"height:100px;text-align:center\">Top Panel</div>"},
+    "left" : { "content": "<div id=\"LeftPanel\" style=\"height:800px;text-align:center\">Left Panel</div>"},
+    "right" : { "content": "<div id=\"RightPanel\" style=\"height:800px;text-align:center\">Right Panel</div>"}, 
+    "center" : { "content": "<div id=\"CenterPanel\" style=\"height:800px;text-align:center\">Center Panel</div>"},
+    "bottom" : { "content": "<div id=\"BottomPanel\" style=\"height:100px;text-align:center\">Bottom Panel</div>"}
+}

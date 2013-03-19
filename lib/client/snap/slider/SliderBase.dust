@@ -1,0 +1,10 @@
+<div id={eid} class="slider">
+    <div class="label">{label}</div>
+    <div class="slide">
+        <div class="range">
+            {?ticks}<div class="ticks">{#values}<div class="tick"></div>{/values}</div>{/ticks}
+            <div class="bar"></div>
+        </div>
+    </div>
+    <div class="legend"><div class="left">{left}</div><div class="right">{right}</div></div>
+</div>

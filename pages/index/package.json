@@ -1,0 +1,28 @@
+{
+    "name" : "index",
+
+    "template" : "page.dust",
+    "controller" : "controller.js",
+    
+    "models" : {
+        "body" : { "url" : "http://localhost:8080/pages/index/json/body.json", "models" :["head"], "delay":50 },
+        "foot" : { "url" : "http://localhost:8080/pages/index/json/foot.json", "models" :["head"], "delay":50 }
+    },
+    
+    "views" : {
+        
+        "header" : { "path" : "../../views/com/walmart/header", "models" : ["head"], "delay":10},
+
+        "top" : { "path" : "../../views/com/walmart/top", "models" :["body"], "delay":10 },
+        "left" : { "path" : "../../views/com/walmart/left", "models" :["body"], "delay":10 },
+        "right" : { "path" : "../../views/com/walmart/right", "models" :["body"], "delay":9000 },
+        "center" : { "path" : "../../views/com/walmart/center", "models" :["body"], "delay":5000 },
+        "bottom" : { "path" : "../../views/com/walmart/bottom", "models" :["body"], "delay":8000 },
+
+        "footer" : { "path" : "../../views/com/walmart/footer", "models" :["foot"], "delay":10000 }
+
+    },
+
+    "flush" : ["header", "top", "left"]
+    
+}

@@ -1,0 +1,22 @@
+	
+body {position:relative; margin:0px; min-height:1024px}
+
+noscript.nojs {position:absolute; display:block; top:0px; left:0px; width:100%; height:100%}
+
+.nojs-msk {
+	position:absolute; z-index:100; top:0px; left:0px; width:100%; height:100%;
+	background-color:#000; opacity:0.25; filter:alpha(opacity=25);
+}
+
+.nojs-msg {
+	position:fixed; z-index:101; top:50%; left:50%; width:400px; margin:-100px -200px -100px -200px;
+	padding:25px; border-radius:4px; background-color:#fff; font-family:Arial;
+}
+
+.nojs-msg h3.header {
+	font-family:Arial; font-weight:bold;
+}
+
+.nojs-msg a {
+	position:relative; color:#1958bd;
+}

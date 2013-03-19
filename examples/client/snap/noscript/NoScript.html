@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>No Script</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<script type=text/javascript src="../../Snap.js"></script>
+
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<style type="text/css" rel="stylesheet">
+	
+noscript.nojs {position:absolute; display:block; top:0px; left:0px; width:100%; height:100%}
+
+body {position:relative; margin:0px; min-height:4000px}
+
+.nojs-msk {
+	position:absolute; z-index:100; top:0px; left:0px; width:100%; height:100%;
+	background-color:#000; opacity:0.25; filter:alpha(opacity=25);
+}
+
+.nojs-msg {
+	position:fixed; z-index:101; top:50%; left:50%; width:400px; margin:-100px -200px -100px -200px;
+	padding:25px; border-radius:4px; background-color:#fff;
+}
+
+.nojs-msg h3.header {
+	font-family:Arial; font-weight:bold;
+}
+
+.nojs-msg a.learn {
+	position:relative; display:block; 
+	padding:20px; margin:10px 0px; 
+	color:#fff; font-weight:bold; font-size:13px;
+	background-color:#00f;
+}
+
+</style>
+</head>
+<body>
+
+<noscript class="nojs">
+<div class="nojs-msk"></div>
+<div class="nojs-msg shdw">
+	<h3 class="header">Please enable javascript</h3>
+	<p>Our new search experience requires javascript to be enabled.  Please <a href="http://enable-javascript.com/">enable javascript on your browser</a>, then <a href="again">try again</a>.
+	<p>To use our basic experience which does not require javascript, <a href="${link}">click here</a>.
+</div>
+</noscript>
+
+</body>
+</html>

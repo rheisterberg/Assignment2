@@ -1,0 +1,8 @@
+
+.asf-f .date .dt span.label {
+	position:relative; display:inline-block; width:40px; color:#666;
+}
+
+.asf-f .date .dt input {
+	position:relative; margin:2px 0px 2px 4px; color:#333;
+}

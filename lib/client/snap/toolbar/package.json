@@ -1,0 +1,23 @@
+{
+
+	"type": "module",
+	"name":"snap.toolbar",
+	"version":"1.0",
+	"description":"Dust ToolBar",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"path":"ToolBar.css"},
+
+		{"path":"ToolButton.css"},
+		{"path":"ToolButton.js"},
+
+		{"path":"ToolBarLayout.js"},
+		{"path":"ToolBar.js"}
+
+	]
+
+}

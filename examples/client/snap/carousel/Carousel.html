@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Carousel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Carousel</h2>
+
+<h3>Vertical Carousel</h3>
+<div id="VerticalCarousel"></div>
+
+<h3>Horizontal Carousel</h3>
+<div id="HorizontalCarousel"></div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	snap.require('snap.console.Console');
+
+	var Component = snap.require('snap.Component');
+	var Container = snap.require('snap.Container');
+
+	var Panel = snap.require('snap.panel.Panel');
+
+	var vertical = new Container({
+		styles:{elem:{margin:'10px',width:'210px','max-height':'106px',border:'1px solid #ccc'}},
+		manager:'snap.carousel.VerticalCarouselLayout',
+		children:[
+			new Panel({title:'Panel 0'}),
+			new Panel({title:'Panel 1'}),
+			new Panel({title:'Panel 2'}),
+			new Panel({title:'Panel 3'}),
+			new Panel({title:'Panel 4'}),
+			new Panel({title:'Panel 5'}),
+			new Panel({title:'Panel 6'}),
+			new Panel({title:'Panel 7'}),
+			new Panel({title:'Panel 8'}),
+			new Panel({title:'Panel 9'})
+		],
+		target:'#VerticalCarousel'
+	});
+
+	var pstyles = {elem:{width:'80px',height:'80px',border:'1px solid #ccc','text-align':'center'}};
+
+	var horizontal = new Container({
+		styles:{elem:{margin:'10px','max-width':'450px',border:'1px solid #ccc'}},
+		manager:'snap.carousel.HorizontalCarouselLayout',
+		children:[
+			new Panel({styles:pstyles,content:'Content 0'}),
+			new Panel({styles:pstyles,content:'Content 1'}),
+			new Panel({styles:pstyles,content:'Content 2'}),
+			new Panel({styles:pstyles,content:'Content 3'}),
+			new Panel({styles:pstyles,content:'Content 4'}),
+			new Panel({styles:pstyles,content:'Content 5'}),
+			new Panel({styles:pstyles,content:'Content 6'}),
+			new Panel({styles:pstyles,content:'Content 7'}),
+			new Panel({styles:pstyles,content:'Content 8'}),
+			new Panel({styles:pstyles,content:'Content 9'})
+		],
+		target:'#HorizontalCarousel'
+	});
+
+});
+</script>
+</body>
+</html>

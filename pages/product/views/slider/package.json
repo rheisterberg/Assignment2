@@ -1,0 +1,12 @@
+{
+
+    "name" : "com.walmart.product.slider",
+    "main" : "./slider.js",
+
+    "template" : "./slider.dust",
+    
+    "requires" : [
+        "./handle.js"
+    ]
+
+}

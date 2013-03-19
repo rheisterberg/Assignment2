@@ -1,0 +1,47 @@
+{
+    "type":"module',
+    "name":"snap.client.features.detector",
+    "version":"1.0",
+    "description":"Snap Client Features Detector",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "includes":[
+        {"path":"Detector.js"}
+    ],
+    
+    "extensions":{
+        "snap.client.features.detector.canvas": {
+            "includes": [
+                {"path":"Canvas.js"}
+            ]
+        },
+        "snap.client.features.detector.datauri": {
+            "includes": [
+                {"path":"DataUri.js"}
+            ]
+        },
+        "snap.client.features.detector.html5": {
+            "includes": [
+                {"path":"Html5.js"}
+            ]
+        },
+        "snap.client.features.detector.json": {
+            "includes": [
+                {"path":"Json.js"}
+            ]
+        },
+        "snap.client.features.detector.mutable": {
+            "includes": [
+                {"path":"Mutable.js"}
+            ]
+        },
+        "snap.client.features.detector.performance": {
+            "includes": [
+                {"path":"Performance.js"}
+            ]
+        }
+    }
+
+}

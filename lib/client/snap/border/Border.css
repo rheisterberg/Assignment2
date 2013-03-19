@@ -1,0 +1,13 @@
+
+.view {position:relative; overflow:hidden; background-color:#dfe8f6}
+
+.view-h {position:relative; overflow:auto; border:solid #dfe8f6; border-width:5px 5px 0px 5px; background-color:#fff}
+.view-f {position:relative; overflow:auto; border:solid #dfe8f6; border-width:0px 5px 5px 5px; background-color:#fff}
+
+.view-b {position:relative; margin:5px}
+
+.view-l {position:absolute; overflow:auto; top:0px; left:0px; margin-right:5px; background-color:#fff}
+.view-r {position:absolute; overflow:auto; top:0px; right:0px; margin-left:5px; background-color:#fff}
+.view-c {position:relative; overflow:auto; background-color:#fff}
+
+

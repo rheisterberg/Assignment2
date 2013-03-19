@@ -1,0 +1,37 @@
+/* See Sprites.css for background image */
+div.fsbr {position:relative; overflow:hidden; background-color:#fff;min-height:37px;}
+table.fsbr {position:relative; width:100%;}
+table.fsbr td {vertical-align: top;}
+table.fsbr td.asCell { width: 25px; }
+
+/* .fsbr input[type="search"] {-webkit-appearance: textfield;} */
+span#afi {z-index:5;border: 1px solid #CCC; padding: 2px 1px 1px 0; width: 97%; height: 29px; overflow: hidden;}
+.fsbr .afi, #searchWidthDiv {border:0; outline: 0; font-size: 15px; font-family: Arial; color: #000; -webkit-appearance: none;}
+#searchWidthDiv { display: inline-block; visibility:hidden; position: absolute;}
+
+.fsbr .adv-link {font-family:Arial;font-size:.76em;}
+.fsbr select.cats {width:220px; height:28px; padding:3px 2px; margin:0 10px; color:#666; font-weight:bold; font-size:.92em; border:1px solid #aaa}
+.fsbr .search {white-space: nowrap;vertical-align:middle;}
+.fsbr .srch {float: right; background: url(${res.img.local.walmart.query.dashSearchButton_png}) no-repeat !important; width:68px; height: 24px;  border-radius: 4px;border: 0;margin-right: 2px; text-indent: 120%;white-space: nowrap;overflow: hidden; margin-top:2px}
+.fsbr .srch:hover {background-position:0 -24px;)}
+.fsbr input.tad {margin:-2px 3px 0 0}
+.fsbr .icd {font-family: Arial; font-size:.76em; line-height:1.3em; vertical-align:top; padding-top:5px; position:relative; z-index:1}
+
+.afi a.ssld {
+		display:block;
+		position:absolute;
+		right:78px;
+		top:8px;
+		height:16px;
+		padding-left:20px;
+		background: url(${res.img.local.walmart.query.dashSaveStar_png}) no-repeat scroll 0 0;
+		color: #ccc;
+		cursor: pointer;
+	}
+	
+.afi a:hover.ssld, .afi a.saveon {
+	 background-position:0 -16px;
+	 text-decoration:none;
+	 color: #1958BD;
+	}	
+	

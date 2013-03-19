@@ -1,0 +1,28 @@
+{
+
+	"type": "module",
+	"name":"walmart.results",
+	"version":"1.0",
+	"description":"Search Results",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"includes":[
+
+		{"module":"walmart.views.item"},
+
+		{"module":"walmart.views.list"},
+		{"module":"walmart.views.gallery"},
+
+		{"path":"Results.js"},
+
+		{"path":"Results.dust.js"},
+		{"path":"Results.rhtml"},
+
+		{"path":"/srp_snap/Item.4cc"}
+
+	]
+
+}
+

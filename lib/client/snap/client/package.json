@@ -1,0 +1,18 @@
+{
+    "type":"module',
+    "name":"snap.client",
+    "version":"1.0",
+    "description":"Snap Client",
+    "authors":[
+        {"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+    ],
+
+    "extensions":{
+        "snap.client.features": {
+            "includes": [
+               {"module":"snap.client.features"}
+            ]
+        }
+    }
+
+}

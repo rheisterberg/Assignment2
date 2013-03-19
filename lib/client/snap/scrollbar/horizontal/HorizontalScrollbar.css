@@ -1,0 +1,9 @@
+
+.scroll-x {position:relative; overflow:hidden}
+
+.scroll-x-bar {position:absolute; z-index:1; height:8px; background-color:#eee; cursor:pointer}
+.scroll-x-bar .scroll-x-hdl {position:absolute; width:20px; height:8px;  background-color:#ccc; border-radius:3px; cursor:pointer}
+
+.scroll-x-bar .scroll-x-hdl:hover {background-color:#999}
+.scroll-x-bar .scroll-x-hdl.drag {background-color:#666}
+

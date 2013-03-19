@@ -1,0 +1,4 @@
+<div id="{eid}" class="asp">
+	{#widgets:children/}
+	<div class="refine"><a id="Refine">{#content path="srp_snap/Aspects.MoreRefinementsLink"/}</a></div>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tab Layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" href="../../Snap.css" rel="stylesheet" />
+<link type="text/css" href="../../Samples.css" rel="stylesheet" />
+
+<script type=text/javascript src="../../Snap.js"></script>
+
+</head>
+<body>
+
+<h2>Tabs Layout</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    var Tab = snap.require('snap.tabs.Tab');
+    var Tabs = snap.require('snap.tabs.Tabs');
+
+    snap.require('snap.console.Console').show();
+
+    var styles = {elem:{margin:'10px','text-align':'center'}};
+
+    var tabs = {
+        autosize:true,
+        styles:{elem:{width:'500px',height:'300px',margin:'10px 20px',padding:'10px',border:'1px solid #ccc'}},
+        children:[
+            {tid:'snap.tabs.Tab',title:'Tab 1',styles:styles,content:'&lt;tab 1 content &gt;'},
+            {tid:'snap.tabs.Tab',title:'Tab 2',styles:styles,content:'&lt;tab 2 content &gt;'},
+            {tid:'snap.tabs.Tab',title:'Tab 3',styles:styles,content:'&lt;tab 3 content &gt;'}
+        ],
+        target:document.body
+    };
+
+    snap.render(Tabs,tabs);
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+<div id="{eid}" class="rlp"><div class="rlp-h"><b class="rlp-i"></b></div><div class="rlp-b">{#widgets:children/}</div></div>
+

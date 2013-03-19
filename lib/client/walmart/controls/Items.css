@@ -1,0 +1,18 @@
+
+div.ipp {position:relative; display:inline-block; padding:5px}
+
+div.ipp-cur { position:relative; color:#1958bd; cursor:pointer }
+
+div.ipp b.ipp-arr {
+	position:relative; display:inline-block; width:8px; height:7px; margin:5px 3px 0px 3px; 
+	background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAVElEQVQIW2OQjNhrBsQzcWBpBiDBBsQPgfg/Gt7y//9/BgYQAeREoUn+BGIVuAKoosNICibDxJEVGADxHyB+C8RCGAqgiqYBcSayGLoCfiBmRhYDAL+ugCzjWB0ZAAAAAElFTkSuQmCC) no-repeat;
+}
+
+div.ipp .ipp-lyr {
+	position:absolute; display:none; z-index:1; top:0px; right:0px;
+	padding:5px 10px; background-color:#fff; border:1px solid #ccc; border-radius:5px; text-align:right
+}
+
+div.ipp a.ipp-lnk {position:relative; display:block; padding:4px 0px; color:#1958bd; white-space:nowrap; text-decoration:none; cursor:pointer}
+div.ipp a.ipp-lnk:hover {color:#1958bd}
+

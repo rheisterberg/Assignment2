@@ -1,0 +1,29 @@
+{
+	"type":"module",
+	"name":"walmart.utils",
+	"version":"1.0",
+	"description":"eBay Utils",
+	"authors":[
+		{"name":"Rich Heisterberg","email":"rheisterberg@walmart.com"}
+	],
+
+	"extensions":{
+		"walmart.utils.flashdetector": {
+			"includes": [
+				 {"path":"FlashDetector.js"}
+			]
+		},
+		"walmart.utils.currency": {
+			"includes": [
+				 {"path":"NumberFormatter.js"},
+				 {"path":"CurrencyFormatter.js"}
+			]
+		},
+		"walmart.utils.numberformatter": {
+			"includes": [
+				 {"path":"NumberFormatter.js"}
+			]
+		}
+	}
+
+}
